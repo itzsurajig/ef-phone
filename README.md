@@ -18,41 +18,41 @@ Join Discord For More Free Scripts
 ᴇғ ᴘʀᴏᴅᴜᴄᴛɪᴏɴs™ : https://discord.gg/WbDp5GQ45t
 
 <h1>Dependencies</h1>
-- [qb-core](https://github.com/qbcore-framework/qb-core)
-- [qb-policejob](https://github.com/qbcore-framework/qb-policejob) - MEOS, handcuff check etc. 
-- [qb-crypto](https://github.com/qbcore-framework/qb-crypto) - Crypto currency trading 
-- [qb-lapraces](https://github.com/qbcore-framework/qb-lapraces) - Creating routes and racing 
-- [qb-houses](https://github.com/qbcore-framework/qb-houses) - House and Key Management App
-- [qb-garages](https://github.com/qbcore-framework/qb-garages) - For Garage App
-- [qb-banking](https://github.com/qbcore-framework/qb-banking) - For Banking App
-- [screenshot-basic](https://github.com/citizenfx/screenshot-basic) - For Taking Photos
-- A Webhook for hosting photos (Discord or Imgur can provide this)
+- [qb-core](https://github.com/qbcore-framework/qb-core)<br>
+- [qb-policejob](https://github.com/qbcore-framework/qb-policejob) - MEOS, handcuff check etc. <br>
+- [qb-crypto](https://github.com/qbcore-framework/qb-crypto) - Crypto currency trading <br>
+- [qb-lapraces](https://github.com/qbcore-framework/qb-lapraces) - Creating routes and racing <br>
+- [qb-houses](https://github.com/qbcore-framework/qb-houses) - House and Key Management App<br>
+- [qb-garages](https://github.com/qbcore-framework/qb-garages) - For Garage App<br>
+- [qb-banking](https://github.com/qbcore-framework/qb-banking) - For Banking App<br>
+- [screenshot-basic](https://github.com/citizenfx/screenshot-basic) - For Taking Photos<br>
+- A Webhook for hosting photos (Discord or Imgur can provide this)<br>
 
 <h1>Features</h1>
-- Lockscreen Feature
-- Garages app to see your vehicle details
-- Mails to inform the player
-- Banking app to see balance and transfer money
-- MEOS app for polices to search
-- Houses app for house details and management
-- Job Centre 
-- Google Maps
-- Paytm For Quick Payment Using Player ID
+- Lockscreen Feature<br>
+- Garages app to see your vehicle details<br>
+- Mails to inform the player<br>
+- Banking app to see balance and transfer money<br>
+- MEOS app for polices to search<br>
+- Houses app for house details and management<br>
+- Job Centre <br>
+- Google Maps<br>
+- Paytm For Quick Payment Using Player ID<br>
 
-<h1>Installation</h1>
-<h3>Manual</h3>
-- Download the script.
-- Make a folder make `[EF]` and put it in that folder
-- Import `qb-phone.sql` in your database
-- Add the following code to your server.cfg/resouces.cfg
+<h1>Installation</h1><br>
+<h3>Manual</h3><br>
+- Download the script.<br>
+- Make a folder make `[EF]` and put it in that folder<br>
+- Import `qb-phone.sql` in your database<br>
+- Add the following code to your server.cfg/resouces.cfg<br>
 ```
-ensure ef-phone
-ensure qb-core
-ensure screenshot-basic
-ensure qb-policejob
-ensure qb-crypto
-ensure qb-lapraces
-ensure qb-houses
-ensure qb-garages
-ensure qb-banking
+ensure ef-phone <br>
+ensure qb-core <br>
+ensure screenshot-basic <br>
+ensure qb-policejob <br>
+ensure qb-crypto <br>
+ensure qb-lapraces <br>
+ensure qb-houses <br>
+ensure qb-garages <br>
+ensure qb-banking <br>
 ```
