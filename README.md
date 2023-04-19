@@ -9,7 +9,8 @@ Stay connected with your friends and community through apps like Twitter, WhatsA
 Players can also access a range of services apps, including a mail app, and many more. With the EF-Phone script, you can offer a seamless and immersive experience for players in your game.
 
 
-![EF-PHONE-V2](https://user-images.githubusercontent.com/104319683/232832485-38a2c8a1-90a1-4c74-b3e2-53181e001c60.png)
+![EF-PHONE PIC](https://user-images.githubusercontent.com/104319683/233084085-719fbca7-e51c-4bed-b47a-23b117605c02.png)
+
 
 
 <h1>Free Download</h1>
