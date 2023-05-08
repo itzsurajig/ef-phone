@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.crypto-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    overflow: hidden;
+}
+
+.crypto-action-page {
+    position: absolute;
+    top: 0;
+    left: -30vh;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.crypto-action-page-buy-crypto {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+}
+
+.crypto-action-page-sell-crypto {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+}
+
+.crypto-action-page-transfer-crypto {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+}
+
+.crypto-action-page-buy-crypto-footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 5vh;
+}
+
+.crypto-action-page-buy-crypto-footer-button {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 5vh;
+    color: white;
+    font-size: 2.0vh;
+    transition: .1s ease-in-out;
+    float: left;
+}
+
+.crypto-action-page-buy-crypto-footer-button:hover {
+   color: #14c5dc;
+}
+
+@keyframes Shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* #2E3B4B */
+
+.crypto-header {
+    position: absolute;
+    width: 100%;
+    height: 18vh;
+    top: 5vh;
+    text-align: center;
+}
+
+.crypto-header-footer {
+    position: absolute;
+    bottom: 0;
+    height: 4.4vh;
+    width: 100%;
+}
+
+.crypto-header-footer-item {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 4.4vh;
+    font-size: 1.2vh;
+    font-family: 'Poppins', sans-serif;
+    transition: .05s ease-in-out;
+}
+
+.crypto-header-footer-item-selected {
+    border-bottom: .2vh solid #14b4dc;
+}
+
+.crypto-page {
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    background: rgb(38, 38, 38);
+    bottom: 10px;
+    margin: 4;
+    left: 1;
+    right: 0;
+}
+
+.crypto-header-values {
+    position: absolute;
+    width: 90%;
+    height: 8vh;
+    top: 7vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.crypto-header-value {
+    position: relative;
+    color: white;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    top: 2.5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vh;
+}
+
+.crypto-header-value p {
+    line-height: 2vh;
+}
+
+.crypto-header-value span {
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.crypto-header-picture {
+    position: absolute;
+    width: 14vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 2vh;
+}
+
+.cryptotab-general {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cryptotab-transactions {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cryptotab-course {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cryptotab-transactions-list {
+    position: absolute;
+    width: 93%;
+    height: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .5vh;
+    border-radius: .5vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.cryptotab-transactions-list::-webkit-scrollbar {
+    display: none;
+}
+
+.cryptotab-transactions-block {
+    position: relative;
+    width: 95%;
+    height: 7vh;
+    margin: 0 auto;
+    margin-bottom: .8vh;
+    margin-top: .6vh;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.cryptotab-transactions-block i {
+    line-height: 7vh;
+    margin-left: 1.5vh;
+    font-size: 2vh;
+    color: white;
+}
+
+.cryptotab-transactions-block-title {
+    position: absolute;
+    top: 1.5vh;
+    left: 4.7vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vh;
+    color: white;
+}
+
+.cryptotab-transactions-block-happening {
+    position: absolute;
+    bottom: 1.5vh;
+    left: 4.7vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1vh;
+}
+
+.cryptotab-course-list {
+    position: absolute;
+    width: 93%;
+    height: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .5vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.cryptotab-course-list::-webkit-scrollbar {
+    display: none;
+}
+
+.cryptotab-course-block {
+    position: relative;
+    width: 95%;
+    height: 7vh;
+    margin: 0 auto;
+    margin-bottom: .8vh;
+    margin-top: .6vh;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.cryptotab-course-block i {
+    line-height: 7vh;
+    margin-left: 1.5vh;
+    font-size: 2vh;
+    color: white;
+}
+
+.cryptotab-course-block-title {
+    position: absolute;
+    top: 1.5vh;
+    left: 4.7vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.cryptotab-course-block-happening {
+    position: absolute;
+    bottom: 1.5vh;
+    left: 4.7vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1vh;
+}
+
+.crypto-percentage-change {
+    position: absolute;
+    width: 10vh;
+    top: -2.6vh;
+}
+
+.crypto-percentage-change i {
+    font-size: 1.2vh;
+}
+
+.cryptotab-general-actions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cryptotab-general-actions::-webkit-scrollbar {
+    display: none;
+}
+
+.cryptotab-general-action {
+    position: relative;
+    color: white;
+    width: 90%;
+    height: 6vh;
+    margin: 1vh auto 0px;
+    font-family: Poppins, sans-serif;
+    transition: all 0.05s linear 0s;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.cryptotab-general-action > i {
+    position: absolute;
+    left: 1.25vh;
+    line-height: 6vh;
+    font-size: 2vh;
+}
+
+.cryptotab-general-action-title {
+    position: absolute;
+    left: 5vh;
+    top: 1vh;
+    font-size: 1.3vh;
+    color: white;
+    font-weight: bold;
+}
+
+.cryptotab-general-action-description {
+    position: absolute;
+    left: 5vh;
+    top: 3vh;
+    font-size: 1.1vh;
+    color: white;
+}
+
+.cryptotab-general-action:hover {
+    background-color: #dc143c;
+}
+
+.crypto-action-page-buy-crypto-input-money {
+    position: absolute;
+    top: 22.4vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    /* border-bottom: 2px solid #000000; */
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+.crypto-action-page-buy-crypto-input-money::-webkit-inner-spin-button {
+    display: none;
+}
+
+.crypto-action-page-buy-crypto-input-money:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-buy-crypto-input-money:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-buy-crypto-input-money-icon  {
+    position: absolute;
+    top: 22vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}
+
+.crypto-action-page-buy-crypto-input-coins {
+    position: absolute;
+    top: 15vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+.crypto-action-page-buy-crypto-input-coins::-webkit-inner-spin-button {
+    display: none;
+}
+
+.crypto-action-page-buy-crypto-input-coins:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-buy-crypto-input-coins:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-buy-crypto-input-coins-icon  {
+    position: absolute;
+    top: 16vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}
+
+/* Sell */
+
+
+.crypto-action-page-sell-crypto-input-money {
+    position: absolute;
+    top: 22.4vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    /* border-bottom: 2px solid #000000; */
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+.crypto-action-page-sell-crypto-input-money::-webkit-inner-spin-button {
+    display: none;
+}
+
+.crypto-action-page-sell-crypto-input-money:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-sell-crypto-input-money:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-sell-crypto-input-money-icon  {
+    position: absolute;
+    top: 22vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}
+
+.crypto-action-page-sell-crypto-input-coins {
+    position: absolute;
+    top: 15vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgb(33,36,43); */
+    /* background: linear-gradient(0deg, rgba(33,36,43,0.5) 0%, rgba(178,132,254,0) 100%); */
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+.crypto-action-page-sell-crypto-input-coins::-webkit-inner-spin-button {
+    display: none;
+}
+
+.crypto-action-page-sell-crypto-input-coins:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-sell-crypto-input-coins:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-sell-crypto-input-coins-icon  {
+    position: absolute;
+    top: 16vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}
+
+.crypto-action-page-header {
+    position: absolute;
+    left: 3vh;
+    top: 6.5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vh;
+    color: white;
+}
+
+.crypto-action-page-wallet {
+    position: absolute;
+    left: 3vh;
+    top: 11vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-walletid {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 4vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.crypto-action-page-transfer-crypto-input-walletid {
+    position: absolute;
+    top: 21vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+
+.crypto-action-page-transfer-crypto-input-walletid:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-transfer-crypto-input-walletid:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-transfer-crypto-input-money-icon  {
+    position: absolute;
+    top: 22vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}
+
+/*  */
+
+.crypto-action-page-transfer-crypto-input-coins{
+    position: absolute;
+    top: 15vh;
+    left: 7vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+.crypto-action-page-transfer-crypto-input-coins::-webkit-inner-spin-button {
+    display: none;
+}
+
+.crypto-action-page-transfer-crypto-input-coins:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+.crypto-action-page-transfer-crypto-input-coins:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+
+.crypto-action-page-transfer-crypto-input-coins-icon  {
+    position: absolute;
+    top: 16vh;
+    left: 3vh;
+    font-size: 2.5vh;
+    color: white;
+}

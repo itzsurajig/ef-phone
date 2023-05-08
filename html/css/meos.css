@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.meos-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    overflow: hidden;
+}
+
+.meos-homescreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.meos-tabs {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.meos-app-header {
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    background-color: #004682;
+    top: 0vh;
+}
+
+#meos-app-title {
+    position: absolute;
+    color: white;
+    top: 5.2vh;
+    left: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.6vh;
+    letter-spacing: .1vh;
+}
+
+#meos-app-name {
+    position: absolute;
+    color: white;
+    top: 5.6vh;
+    right: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vh;
+    letter-spacing: .1vh;
+    float: right;
+}
+
+.meos-blocks {
+    position: absolute;
+    width: 90%;
+    height: 55%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10.6vh;
+}
+
+.meos-block {
+    position: relative;
+    background-color: #004682;
+    width: 45%;
+    height: 30%;
+    margin: .5vh;
+    margin-left: .7vh;
+    margin-top: .7vh;
+    border-radius: .5vh;
+    float: left;
+    transition: .1s linear;
+    text-align: center;
+}
+
+.meos-block:hover {
+    background-color: #005299;
+}
+
+.meos-block > i {
+    line-height: 5.4vh;
+    color: white;
+    font-size: 2.5vh;
+}
+
+.meos-block > p {
+    line-height: 2vh;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+}
+
+.meos-tabs-footer {
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+    height: 5vh;
+    background-color: #004682;
+    color: #ffffff;
+    text-align: center;
+    transition: .1s linear;
+}
+
+.meos-tabs-footer:hover {
+    background-color: #005299;
+}
+
+.meos-tabs-footer:hover #back-meos {
+    animation: Shake 1s infinite;
+}
+
+.meos-tabs-footer i {
+    line-height: 5vh;
+    font-size: 1.9vh;
+}
+
+.noodknop {
+    animation: Emergency 3s infinite;
+}
+
+@keyframes Emergency {
+    0% {
+        background-color: #d30404;
+    }
+    25% {
+        background-color: #a00101;
+    }
+    50% {
+        background-color: #d30404;
+    }
+    75% {
+        background-color: #a00101;
+    }
+    100% {
+        background-color: #d30404;
+    }
+}
+
+@keyframes Shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.person-search-input {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    outline: none;
+    border: none;
+    height: 4.2vh;
+    width: 18vh;
+    border-bottom: .15vh solid rgb(78, 78, 78);
+    padding: 1vh;
+    background-color: rgb(235, 235, 235);
+    border-radius: .5vh .5vh 0 0;
+    transition: .1s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+.person-search-input:focus {
+    border-bottom: .15vh solid rgb(248, 160, 28);
+    transition: .1s linear;
+}
+
+.person-search-input:valid {
+    border-bottom: .15vh solid rgb(76, 207, 24);
+    transition: .1s linear;
+}
+
+.person-search-input-house {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    outline: none;
+    border: none;
+    height: 4.2vh;
+    width: 18vh;
+    border-bottom: .15vh solid rgb(78, 78, 78);
+    padding: 1vh;
+    background-color: rgb(235, 235, 235);
+    border-radius: .5vh .5vh 0 0;
+    transition: .1s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+.person-search-input-house:focus {
+    border-bottom: .15vh solid rgb(248, 160, 28);
+    transition: .1s linear;
+}
+
+.person-search-input-house:valid {
+    border-bottom: .15vh solid rgb(76, 207, 24);
+    transition: .1s linear;
+}
+
+.confirm-search-person-test {
+    position: absolute;
+    width: 5vh;
+    height: 4.2vh;
+    background-color: #004682;
+    top: 11vh;
+    right: 2vh;
+    border-radius: .4vh;
+    transition: .1s linear;
+    text-align: center;
+    color: white;
+    pointer-events: all;
+}
+
+.confirm-search-person-test > i {
+    font-size: 1.6vh;
+    line-height: 4.2vh;
+}
+
+.confirm-search-person-test:hover {
+    background-color: #005299;
+}
+
+.confirm-search-person-house {
+    display: block;
+    position: absolute;
+    width: 5vh;
+    height: 4.2vh;
+    background-color: #004682;
+    top: 11vh;
+    right: 2vh;
+    border-radius: .4vh;
+    transition: .1s linear;
+    text-align: center;
+    color: white;
+}
+
+.confirm-search-person-house > i {
+    font-size: 1.6vh;
+    line-height: 4.2vh;
+}
+
+.confirm-search-person-house:hover {
+    background-color: #005299;
+}
+
+.person-search-results {
+    position: absolute;
+    width: 87%;
+    height: 57.5%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 17vh;
+    border-radius: .5vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+}
+
+.person-search-results::-webkit-scrollbar {
+    width: .5vh;
+}
+
+.person-search-results::-webkit-scrollbar-thumb {
+    background-color: #004682;
+}
+
+.person-search-result {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #004682;
+    margin-bottom: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .05s linear;
+}
+
+.person-search-result-house {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #004682;
+    margin-bottom: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .05s linear;
+}
+
+.house-adress-location:hover {
+    opacity: .75;
+}
+
+.appartment-adress-location:hover {
+    opacity: .75;
+}
+
+.person-search-result-apartment > span :hover {
+    opacity: .5;
+}
+
+.person-search-result:hover {
+    background-color: #005299;
+}
+
+.person-search-result-name {
+    padding: 1vh;
+    font-size: 1.4vh;
+}
+
+.person-search-result-bsn {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-dob {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-number {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-nationality {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-gender {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-warned {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-driverslicense {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-search-result-apartment {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.person-opensplit {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: .07vh;
+    background-color: white;
+    top: 5.6vh;
+}
+
+.meos-person-page {
+    display: none;
+}
+
+.meos-houses-page {
+    display: none;
+}
+
+/* Vehicle Search */
+
+.meos-vehicle-page {
+    display: none;
+}
+
+.meos-alerts-page {
+    display: none;
+}
+
+.vehicle-search-input {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    outline: none;
+    border: none;
+    height: 4.2vh;
+    width: 14.5vh;
+    border-bottom: .15vh solid rgb(78, 78, 78);
+    padding: 1vh;
+    background-color: rgb(235, 235, 235);
+    border-radius: .5vh .5vh 0 0;
+    transition: .1s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vehicle-search-input:focus {
+    border-bottom: .15vh solid rgb(248, 160, 28);
+    transition: .1s linear;
+}
+
+.vehicle-search-input:valid {
+    border-bottom: .15vh solid rgb(76, 207, 24);
+    transition: .1s linear;
+}
+
+.scan-search-vehicle {
+    position: absolute;
+    width: 4vh;
+    height: 4.2vh;
+    background-color: #004682;
+    top: 11vh;
+    right: 7vh;
+    border-radius: .4vh;
+    transition: .1s linear;
+    text-align: center;
+    color: white;
+}
+
+.scan-search-vehicle > i {
+    font-size: 1.6vh;
+    line-height: 4.2vh;
+}
+
+.scan-search-vehicle:hover {
+    background-color: #005299;
+}
+
+.confirm-search-vehicle {
+    position: absolute;
+    width: 4vh;
+    height: 4.2vh;
+    background-color: #004682;
+    top: 11vh;
+    right: 2vh;
+    border-radius: .4vh;
+    transition: .1s linear;
+    text-align: center;
+    color: white;
+}
+
+.confirm-search-vehicle > i {
+    font-size: 1.6vh;
+    line-height: 4.2vh;
+}
+
+.confirm-search-vehicle:hover {
+    background-color: #005299;
+}
+
+.vehicle-search-results {
+    position: absolute;
+    width: 87%;
+    height: 57.5%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 17vh;
+    border-radius: .5vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+}
+
+.vehicle-search-results::-webkit-scrollbar {
+    width: .5vh;
+}
+
+.vehicle-search-results::-webkit-scrollbar-thumb {
+    background-color: #004682;
+}
+
+.vehicle-search-result {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #004682;
+    margin-bottom: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .05s linear;
+}
+
+.vehicle-search-result:hover {
+    background-color: #005299;
+}
+
+.vehicle-search-result-name {
+    padding: 1vh;
+    font-size: 1.4vh;
+}
+
+.vehicle-search-result-plate {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.vehicle-search-result-owner{
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.vehicle-search-result-apk {
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.vehicle-search-result-warrant{
+    font-size: 1vh;
+    padding: 1vh;
+    margin-top: -1.8vh;
+}
+
+.vehicle-opensplit {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: .07vh;
+    background-color: white;
+    top: 5.5vh;
+}
+
+.meos-clear-alerts {
+    position: absolute;
+    height: 3.5vh;
+    width: 6.5vh;
+    top: 11vh;
+    left: 2vh;
+    background-color: #004682;
+    border-radius: .4vh;
+    text-align: center;
+    line-height: 3.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: .05s linear;
+}
+
+.meos-clear-alerts:hover {
+    background-color: #005299;
+}
+
+.meos-alerts {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 87%;
+    height: 33.5vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 16vh;
+    border-radius: .5vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.meos-alerts::-webkit-scrollbar {
+    display: none;
+}
+
+.meos-alert {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #004682;
+    padding: 1.5vh;
+    margin-bottom: .5vh;
+}
+
+.meos-alert-new {
+    background-color: rgb(99, 99, 99);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: .5vh;
+    border-radius: 1vh;
+    font-size: 1.2vh;
+}
+
+.meos-alert-type {
+    margin-left: .2vh;
+    margin-top: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.meos-alert-description {
+    margin-left: .2vh;
+    margin-top: -.8vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1vh;
+}
+
+.meos-location-button {
+    width: 6.3vh;
+    height: auto;
+    background-color: rgb(66, 66, 66);
+    margin-left: 16vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: .5vh;
+    text-align: center;
+    border-radius: 1vh;
+    margin-top: -1vh;
+    transition: .05s linear;
+}
+
+.meos-location-button:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+.police-icon-notify {
+    width: 2vh;
+}
+
+.police-icon {
+    margin-top: .8vh;
+    width: 2.1vh;
+}
+
+.meos-recent-header {
+    position: absolute;
+    left: 2vh;
+    bottom: 18.5vh;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.4vh;
+}
+
+.meos-recent-alerts {
+    position: absolute;
+    width: 85.5%;
+    height: 15.5vh;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    top: 39vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: .2vh;
+    overflow-y: scroll;
+}
+
+.meos-recent-alerts::-webkit-scrollbar {
+    display: none;
+}
+
+.meos-recent-alert {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1vh;
+    background-color: #004682;
+    border-radius: .3vh;
+    transition: .05s linear;
+}
+
+.meos-recent-alert:hover {
+    background-color: #005cad;
+}
+
+.meos-recent-alert-title {
+    margin-left: .2vh;
+    margin-top: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3vh;
+}
+
+.meos-recent-alert-description {
+    margin-left: .2vh;
+    margin-top: .5vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.1vh;
+}

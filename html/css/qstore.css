@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.store-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(252, 252, 252);
+    overflow: hidden;
+}
+
+.store-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    color: black;
+    /* background-color: gray; */
+    border-bottom: .3vh solid rgb(224, 224, 224);
+}
+
+.store-header > p {
+    position: absolute;
+    left: 1.9vh;
+    top: 5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vh;
+}
+
+.store-apps {
+    position: absolute;
+    width: 92%;
+    height: 80%;
+
+    bottom: 2%;
+    left: 0;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    background: rgb(243, 243, 243);
+    border-radius: .5vh;
+
+    -webkit-box-shadow: 0px 0px 7px px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.15);
+
+    overflow: hidden;
+}
+
+.storeapp {
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(245, 245, 245);
+    
+    margin: 0 auto;
+    margin-bottom: .8vh;
+
+    border-bottom: 0.2vh solid rgb(177, 177, 177);
+
+    /* border-radius: .6vh; */
+}
+
+.storeapp-icon {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    background-color: #575fcf;
+
+    margin: 1vh;
+    border-radius: .3vh;
+
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.storeapp-icon > i {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.5vh;
+    color: rgb(255, 255, 255);
+}
+
+.storeapp-title {
+    position: absolute;
+    top: 1vh;
+    left: 6.9vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vh;
+}
+
+.storeapp-creator {
+    position: absolute;
+    bottom: 2.2vh;
+    left: 6.9vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vh;
+}
+
+.storeapp-download {
+    position: absolute;
+    line-height: 7vh;
+    right: 2vh;
+    font-size: 2vh;
+    color: #4488e7;
+
+    transition: .05s ease-in-out;
+}
+
+.storeapp-download:hover {
+    color: #3cb623;
+    transition: .05s ease-in-out;
+}
+
+.storeapp-remove {
+    position: absolute;
+    line-height: 7vh;
+    right: 2vh;
+    font-size: 2vh;
+    color: #4488e7;
+
+    transition: .05s ease-in-out;
+}
+
+.storeapp-remove:hover {
+    color: #b62323;
+    transition: .05s ease-in-out;
+}
+
+
+.download-password-container {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.download-password {
+    position: absolute;
+    width: 80%;
+    height: 17vh;
+    background-color: rgb(248, 248, 248);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+    border-radius: .3vh;
+}
+
+#download-password-title {
+    color: black;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 4vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vh;
+}
+
+#download-password-disclaimer {
+    color: black;
+    position: absolute;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vh;
+
+    top: 3.2vh;
+}
+
+.download-password-input {
+    position: absolute;
+    width: 100%;
+    height: 3.5vh;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    outline: none;
+    top: 7vh;
+
+    border-bottom: .2vh solid rgb(209, 209, 209);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    transition: .2s ease-in-out;
+}
+
+.download-password-input:focus {
+    border-bottom: .2vh solid rgb(245, 155, 37);
+}
+
+.download-password-input:valid {
+    border-bottom: .2vh solid rgb(19, 179, 27);
+}
+
+.download-progressbar {
+    position: absolute;
+    width: 100%;
+    height: 1vh;
+    bottom: 0;
+}
+
+.download-progressbar-fill {
+    position: absolute;
+    width: 50%;
+    background-color: green;
+    height: 100%;
+}
+
+.download-password-accept {
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    background-color: rgb(192, 192, 192);
+    bottom: 1.75vh;
+    margin: 0 auto;
+    left: 0;
+    right: 5.2vh;
+    text-align: center;
+
+    font-size: 1.9vh;
+    transition: 0.1s linear;
+}
+.download-password-deny {
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    background-color: rgb(192, 192, 192);
+    bottom: 1.75vh;
+    margin: 0 auto;
+    left: 5.2vh;
+    right: 0;
+    text-align: center;
+
+    font-size: 2vh;
+    transition: 0.1s linear;
+}
+
+.download-password-accept > i {
+    line-height: 4vh;
+}
+
+.download-password-deny > i {
+    line-height: 4vh;
+}
+
+.download-password-accept:hover {
+    color: rgb(114, 114, 114);
+}
+
+.download-password-deny:hover {
+    color: rgb(114, 114, 114);
+}

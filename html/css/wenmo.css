@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.paytm-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+}
+
+.paytm-header {
+    position: absolute;
+    width: 86%;
+    height: 10%;
+    left: 6.5%;
+    right: 0;
+    color: white;
+    font-size: 1.8vh;
+}
+
+.paytm-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+    margin: 0 0 0 9vh;
+}
+
+.paytm-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 9vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+}
+
+.paytm-list {
+    position: absolute;
+    width: 90%;
+    height: 84%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.paytm-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.paytm-send-money-btn{
+    position: absolute;
+    color: whitesmoke;
+    transition: all 0.2s ease 0s;
+    display: inline;
+    border-radius: 4px;
+    top: 77%;
+    left: 91%;
+}
+
+.paytm-send-money-btn:hover{
+    color: rgb(187, 187, 187);
+}
+
+.paytm-form-style-body{
+    width: 95%;
+    background-color: #2c465f;
+    margin: 2% 2%;
+    padding: 3% 3%;
+    border-radius: 1.5vh;
+    /* border-bottom: 0.1vh solid rgba(245, 245, 245, 0.68); */
+}
+
+.paytm-time-class-body{
+    display: inline;
+    float: right;
+    color: whitesmoke;
+}

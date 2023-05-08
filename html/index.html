@@ -1,0 +1,1302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.9/purify.min.js" integrity="sha512-VOTFfd4vxPpuE98m9UQTN7j2N2/Blw44lZMhRTnZQqA2gOHq7Yvn5bdIDjjAZuFqqkDtppcjMW+dN3GYbhM94g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <title>EF Phone</title>
+
+    <!-- CSS File's -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/twitter.css">
+    <link rel="stylesheet" href="./css/bank.css">
+    <link rel="stylesheet" href="./css/whatsapp.css">
+    <link rel="stylesheet" href="./css/garage.css">
+    <link rel="stylesheet" href="./css/mail.css">
+    <link rel="stylesheet" href="./css/meos.css">
+    <link rel="stylesheet" href="./css/crypto.css">
+    <link rel="stylesheet" href="./css/racing.css">
+    <link rel="stylesheet" href="./css/houses.css">
+    <link rel="stylesheet" href="./css/lawyers.css">
+    <link rel="stylesheet" href="./css/qstore.css">
+    <link rel="stylesheet" href="./css/trucker.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/camera.css">
+    <link rel="stylesheet" href="./css/jobcenter.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/ping.css">
+    <link rel="stylesheet" href="./css/lsbn.css">
+    <link rel="stylesheet" href="./css/wenmo.css">
+    <link rel="stylesheet" href="./css/debt.css">
+
+    <!-- CDN's -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js" integrity="sha512-hkvXFLlESjeYENO4CNi69z3A1puvONQV5Uh+G4TUDayZxSLyic5Kba9hhuiNLbHqdnKNMk2PxXKm0v7KDnWkYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap -->
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js" integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script> <!-- Color CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
+</head>
+    <body style="background-color: transparent !important";>
+        <div id="popup">
+            <div class="popupclass">
+                <div id="close"></div>
+            </div>
+        </div>
+        <div class="container disableSelection">
+
+            <div class="lock-screen">
+                <div id="ef-phone-time">08:05</div>
+                <div class="ef-finger">
+                    <img src="./img/fingerprint.png" class="ef-fingerprint">
+                </div>
+            </div>
+
+            
+            <img src="./img/ef-iphone-frame.png" class="phone-frame">
+            <div class="phone-container phone-background">
+                <!-- Phone Header -->
+                <div class="phone-header">
+                    <div id="phone-icons">
+                        <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="right" title="EF 5G"></i>
+                        <i class="fas fa-battery-full" id="phone-battery" data-toggle="tooltip" data-placement="left"></i>
+                    </div>
+                </div>
+
+                <!-- Phone Notification -->
+                <div class="phone-notification-container">
+                    <div class="notification-icon"></div>
+                    <div class="notification-title"></div>
+                    <div class="notification-text"></div>
+                </div>
+
+                <!-- Home Applications -->
+                <div class="phone-applications">
+                    <div class="phone-footer-applications">
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="1"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="2"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="3"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="4"></div>
+                    </div>
+
+                    <div class="phone-home-applications">
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="5"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="6"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="7"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="8"></div>
+
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="9"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="10"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="11"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="12"></div>
+
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="13"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="14"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="15"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="16"></div>
+
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="17"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="18"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="19"></div>
+                        <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="20"></div>
+                    </div>
+                </div>
+
+
+                <!-- Unread Alerts -->
+                <!-- <div class="app-unread-alerts">1</div> -->
+
+                <!-- Container for all application's -->
+                <div class="phone-application-container">
+                    <div class="settings-app">
+                        <div class="settings-app-header"><i class="fas fa-cogs"></i></div>
+
+                        <div class="settings-app-tab-appereance">
+                            <!-- <div class="settings-app-tab-header"><p>Appearance</p></div> -->
+                            <div class="settings-app-tab" data-settingstab="background">
+                                <div class="settings-tab-icon"><i class="fas fa-palette" style="color: #9b59b6;"></i></div>
+                                <div class="settings-tab-title"><p>Background</p></div>
+                                <div class="settings-tab-description"><p>Default</p></div>
+                            </div>
+                            <div class="settings-app-tab" data-settingstab="profilepicture">
+                                <div class="settings-tab-icon"></div>
+                                <div class="settings-tab-title"><p>Avatar</p></div>
+                                <div class="settings-tab-description"><p>Default</p></div>
+                            </div>
+                        </div>
+
+
+                        <div class="settings-app-tab-information">
+                            <!-- <div class="settings-app-tab-header"><p>Infomation</p></div> -->
+                            <div class="settings-app-tab secondTab" data-settingstab="myPhone">
+                                <div class="settings-tab-icon"><i class="fas fa-phone-alt" style="color: #e67e22;"></i></div>
+                                <div class="settings-tab-title"><p>My phone number</p></div>
+                                <div class="settings-tab-description" id="myPhoneNumber"><p>0612345678</p></div>
+                            </div>
+                            <div class="settings-app-tab secondTab" data-settingstab="serialNumber">
+                                <div class="settings-tab-icon"><i class="fas fa-phone-alt" style="color: #e67e22;"></i></div>
+                                <div class="settings-tab-title"><p>Serial Number</p></div>
+                                <div class="settings-tab-description" id="mySerialNumber"><p>0612345678</p></div>
+                            </div>
+                            <div class="settings-app-tab secondTab" data-settingstab="numberrecognition">
+                                <!-- Rounded switch -->
+                                <label class="switch">
+                                    <input class="numberrec-box" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+
+                                <div class="settings-tab-icon"><i class="fas fa-user-slash" style="color: #e67e22;"></i></div>
+                                <div class="settings-tab-title"><p>Call Anonymously</p></div>
+                                <div class="settings-tab-description" id="numberrecognition"><p>Off</p></div>
+                            </div>
+                        </div>
+
+                        <div class="settings-background-tab">
+                            <div class="settings-app-header"><p>Background</p></div>
+
+                            <div class="background-options">
+                                <div class="background-option" data-background="ef-wallpaper">
+                                    <div class="background-option-icon"> <i class="fas fa-paint-brush"></i> </div>
+                                    <div class="background-option-title"> Default </div>
+                                    <div class="background-option-description">Default background</div>
+                                    <div class="background-option-current"><i class="fas fa-check-circle"></i></div>
+                                </div>
+                                <div class="background-option" data-background="custom-background">
+                                    <div class="background-option-icon"><i class="fas fa-paint-brush"></i></div>
+                                    <div class="background-option-title">Custom</div>
+                                    <div class="background-option-description">Personalize your background</div>
+                                </div>
+                            </div>
+
+                            <div class="background-buttons">
+                                <div class="background-button" id="accept-background">
+                                    <p>Confirm</p>
+                                </div>
+                                <div class="background-button" id="cancel-background">
+                                    <p>Cancel</p>
+                                </div>
+                            </div>
+
+                            <div class="background-custom">
+                                <div class="background-custom-title">Personalized Background</div>
+                                <input type="text" class="custom-background-input" placeholder="URL (.jpg/.png)" spellcheck="false">
+
+                                <div class="background-custom-buttons">
+                                    <div class="custom-background-button" id="accept-custom-background"><p>Confirm</p></div>
+                                    <div class="custom-background-button" id="cancel-custom-background"><p>Cancel</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="settings-profilepicture-tab">
+                            <div class="settings-app-header"><p>Avatar</p></div>
+
+                            <div class="profilepicture-options">
+                                <div class="profilepicture-option" data-profilepicture="default">
+                                    <div class="profilepicture-option-icon"> <i class="fas fa-paint-brush"></i> </div>
+                                    <div class="profilepicture-option-title"> Default </div>
+                                    <div class="profilepicture-option-description">Default avatar</div>
+                                    <div class="profilepicture-option-current"><i class="fas fa-check-circle"></i></div>
+                                </div>
+                                <div class="profilepicture-option" data-profilepicture="custom-profilepicture">
+                                    <div class="profilepicture-option-icon"><i class="fas fa-paint-brush"></i></div>
+                                    <div class="profilepicture-option-title">Custom</div>
+                                    <div class="profilepicture-option-description">Personalize your avatar</div>
+                                </div>
+                                <div class="profilepicture-option" data-profilepicture="camera-profilepicture">
+                                    <div class="profilepicture-option-icon"><i class="fas fa fa-camera"></i></div>
+                                    <div class="profilepicture-option-title">Photo - Coming Soon</div>
+                                    <div class="profilepicture-option-description">Set your profile picture with a photo</div>
+                                </div>
+                            </div>
+
+                            <div class="profilepicture-buttons">
+                                <div class="profilepicture-button" id="accept-profilepicture">
+                                    <p>Confirm</p>
+                                </div>
+                                <div class="profilepicture-button" id="cancel-profilepicture">
+                                    <p>Cancel</p>
+                                </div>
+                            </div>
+
+                            <div class="profilepicture-custom">
+                                <div class="profilepicture-custom-title">Personalized Avatar</div>
+                                <input type="text" class="custom-profilepicture-input" placeholder="URL (.jpg/.png)" spellcheck="false">
+
+                                <div class="profilepicture-custom-buttons">
+                                    <div class="custom-profilepicture-button" id="accept-custom-profilepicture"><p>Confirm</p></div>
+                                    <div class="custom-profilepicture-button" id="cancel-custom-profilepicture"><p>Cancel</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-call-app">
+                        <div class="phone-call-incoming">
+                            <div class="phone-call-incoming-title">Incoming Call</div>
+                            <div class="phone-call-incoming-caller">Unknown Number</div>
+                            <div class="phone-call-incoming-picture"></div>
+
+                            <i class="fas fa-phone" id="incoming-answer"></i>
+                            <i class="fas fa-phone" id="incoming-deny"></i>
+                        </div>
+
+                        <div class="phone-call-outgoing">
+                            <div class="phone-call-outgoing-title">Calling...</div>
+                            <div class="phone-call-outgoing-caller">Unknown Number</div>
+                            <div class="phone-call-outgoing-picture"></div>
+
+                            <i class="fas fa-phone" id="outgoing-cancel"></i>
+                        </div>
+
+                        <div class="phone-call-ongoing">
+                            <div class="phone-call-ongoing-title">Ongoing</div>
+                            <div class="phone-call-ongoing-caller">Unknown Number</div>
+                            <div class="phone-call-ongoing-picture"></div>
+                            <div class="phone-call-ongoing-time">05:05</div>
+
+                            <i class="fas fa-phone" id="ongoing-cancel"></i>
+                        </div>
+                    </div>
+
+                    <div class="phone-app">
+                        <div class="phone-app-header">
+                            <p>Contacts</p>
+                            <span id="total-contacts">0 contacts</span>
+                        </div>
+
+                        <div class="phone-contacts">
+                            <div class="phone-contacts-header">
+                                <input type="text" id="contact-search" placeholder="Contact name" spellcheck="false">
+                                <i id="phone-search-icon" class="fas fa-search"></i>
+                                <i id="phone-plus-icon" class="fas fa-plus"></i>
+                            </div>
+
+                            <div class="phone-contact-list">
+                            </div>
+                        </div>
+
+                        <div class="phone-recent">
+                            <div class="phone-recent-header"><p>Recent Call History</p></div>
+
+                            <div class="phone-recent-calls">
+                                <!-- <div class="phone-recent-call"> <div class="phone-recent-call-image">P</div> <div class="phone-recent-call-name">Pieter Post</div> <div class="phone-recent-call-type"><i class="fas fa-phone-slash"></i></div> <div class="phone-recent-call-time">12:05</div> </div> -->
+                            </div>
+                        </div>
+
+                        <div class="phone-suggestedcontacts">
+                            <div class="phone-suggestedcontacts-header">
+                                Suggested Contacts
+                                <p class="amount-of-suggested-contacts">0 contacts</p>
+                            </div>
+
+                            <div class="suggested-contacts">
+                            </div>
+                        </div>
+
+                        <div class="phone-keypad noselect">
+                            <div id="phone-keypad-input"></div>
+
+                            <div class="phone-keypad-keys">
+                                <div class="phone-keypad-key" data-keypadvalue="1">1</div>
+                                <div class="phone-keypad-key" data-keypadvalue="2">2</div>
+                                <div class="phone-keypad-key" data-keypadvalue="3">3</div>
+                                <div class="phone-keypad-key" data-keypadvalue="4">4</div>
+                                <div class="phone-keypad-key" data-keypadvalue="5">5</div>
+                                <div class="phone-keypad-key" data-keypadvalue="6">6</div>
+                                <div class="phone-keypad-key" data-keypadvalue="7">7</div>
+                                <div class="phone-keypad-key" data-keypadvalue="8">8</div>
+                                <div class="phone-keypad-key" data-keypadvalue="9">9</div>
+                                <div class="phone-keypad-key" data-keypadvalue="*">*</div>
+                                <div class="phone-keypad-key" data-keypadvalue="0">0</div>
+                                <div class="phone-keypad-key" data-keypadvalue="#">#</div>
+                            </div>
+                            <div class="phone-keypad-key-call"><i class="fas fa-phone-alt"></i></div>
+                        </div>
+
+                        <div class="phone-add-contact">
+                            <div class="phone-add-contact-header"><p>Add Contact</p></div>
+
+                            <i id="phone-add-contact-name-icon" class="fas fa-user"></i>
+                            <input type="text" class="phone-add-contact-name" placeholder="Contact Name" required spellcheck="false">
+
+                            <i id="phone-add-contact-number-icon" class="fas fa-phone-alt"></i>
+                            <input type="number" class="phone-add-contact-number" placeholder="Phone number" required spellcheck="false">
+
+                            <i id="phone-add-contact-iban-icon" class="fas fa-money-check"></i>
+                            <input type="text" class="phone-add-contact-iban" placeholder="Bank nr. (Not required)" required spellcheck="false">
+
+                            <div class="phone-add-contact-buttons">
+                                <div class="phone-add-contact-button" id="add-contact-save"><p>Save</p></div>
+                                <div class="phone-add-contact-button" id="add-contact-cancel"><p>Cancel</p></div>
+                            </div>
+                        </div>
+
+                        <div class="phone-edit-contact">
+                            <div class="phone-edit-contact-header"><p>Add Contact</p></div>
+
+                            <i id="phone-edit-contact-name-icon" class="fas fa-user"></i>
+                            <input type="text" class="phone-edit-contact-name" placeholder="Contact Name" required spellcheck="false">
+
+                            <i id="phone-edit-contact-number-icon" class="fas fa-phone-alt"></i>
+                            <input type="number" class="phone-edit-contact-number" placeholder="Phone number" required spellcheck="false">
+
+                            <i id="phone-edit-contact-iban-icon" class="fas fa-money-check"></i>
+                            <input type="text" class="phone-edit-contact-iban" placeholder="Bank nr. (Not required)" required spellcheck="false">
+
+                            <div class="phone-edit-contact-buttons">
+                                <div class="phone-edit-contact-button" id="edit-contact-save"><p>Save</p></div>
+                                <div class="phone-edit-contact-button" id="edit-contact-delete"><p>Delete</p></div>
+                                <div class="phone-edit-contact-button" id="edit-contact-cancel"><p>Cancel</p></div>
+                            </div>
+                        </div>
+
+                        <div class="phone-app-footer">
+                            <div class="phone-app-footer-button" data-phonefootertab="suggestedcontacts">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="phone-app-footer-button" data-phonefootertab="keypad">
+                                <i class="fas fa-list-ol"></i>
+                            </div>
+                            <div class="phone-app-footer-button" data-phonefootertab="recent">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="phone-app-footer-button phone-selected-footer-tab" data-phonefootertab="contacts">
+                                <i class="fas fa-address-book"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- news -->
+
+
+                    <div class="lsbn-app">
+
+                        <div class="phone-new-box-body" id="lsbn-box-new-add-text">
+                            <div class="phone-new-box-main">
+                                <input class="phone-new-input-class lsbn-input-yek" type="text" placeholder="Text">
+                                <input class="phone-new-input-class lsbn-input-doo" type="text" placeholder="Link">
+                                <p> </p>
+                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
+                                <div class="phone-new-box-btn box-new-green" id="lsbn-submit-to-send-text">Submit</div>
+                            </div>
+                        </div>
+
+                        <div class="lsbn-header">
+                            <div class="lsbn-send-news-for-chat" data-toggle="tooltip" title="Send News"><i class="fas fa-bullhorn"></i></div>
+                            <img class="lsbn-logo-style" src="./img/LSBNlogo.png">
+                        </div>
+
+                        <div class="lsbn-list">
+                        </div>
+                    </div>
+
+
+                    <div class="bill-app">
+
+                        <div class="phone-new-box-body" id="bill-box-new-for-add">
+                            <div class="phone-new-box-main">
+                                <input class="phone-new-input-class bill-input-one" type="number" min="1" placeholder="Player ID">
+                                <input class="phone-new-input-class bill-input-two" type="number" min="1" placeholder="Amount">
+                                <input class="phone-new-input-class bill-input-three" type="text" maxlength="50" placeholder="Reason">
+                                <p> </p>
+                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
+                                <div class="phone-new-box-btn box-new-green" id="bill-create-bill-ended" data-toggle="tooltip" title="Create Bill">Submit</div>
+                            </div>
+                        </div>
+
+                        <div class="phone-new-box-body" id="bill-box-new-for-accept">
+                            <div class="phone-new-box-main">
+                                <div class="bill-show-bodyclass bill-show-one" data-toggle="tooltip" title="Reason">a</div>
+                                <div class="bill-show-bodyclass bill-show-two" style="color: #6cac59;" data-toggle="tooltip" title="Amount to be paid">a</div>
+                                <div class="bill-show-bodyclass bill-show-three" data-toggle="tooltip" title="Sender Name">a</div>
+                                <p> </p>
+                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
+                                <div class="phone-new-box-btn box-new-green" id="bill-create-bill-accept">Submit</div>
+                            </div>
+                        </div>
+
+                        <div class="bill-header">
+                            <div class="bill-create-bill-btn" data-toggle="tooltip" title="Create Bill"><i class="fas fa-donate"></i></div>
+                        </div>
+
+                        <div class="bill-list">
+                        </div>
+                    </div>
+
+
+
+                    <!-- paytm -->
+
+
+                    <div class="paytm-app">
+
+                        <div class="phone-new-box-body" id="paytm-box-new-for-give">
+                            <div class="phone-new-box-main">
+                                <input class="phone-new-input-class paytm-input-one" type="number" min="1" placeholder="Player ID">
+                                <input class="phone-new-input-class paytm-input-two" type="number" min="1" placeholder="Amount">
+                                <input class="phone-new-input-class paytm-input-three" type="text" maxlength="50" placeholder="Reason">
+                                <p> </p>
+                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
+                                <div class="phone-new-box-btn box-new-green" id="paytm-send-money-ended" data-toggle="tooltip" title="Send Money">Submit</div>
+                            </div>
+                        </div>
+
+                        <div class="paytm-header">
+                            <div class="paytm-send-money-btn" data-toggle="tooltip" title="Send Money"><i class="fas fa-hand-holding-usd"></i></div>
+                        </div>
+
+                        <div class="paytm-list">
+                        </div>
+                    </div>
+
+
+<!-- paytm -->
+
+
+<!-- ping -->
+
+<div class="ping-app">
+    <div class="ping-header">
+        <div class="channel">
+            <input id="channel" type="number" min="1" name="channel" placeholder="Player ID">
+            <div style="display: block;" id="ping-send" class="ping-sender-piinger"><i class="fas fa-map-pin"></i> Request Location</div>
+            <div style="display: none;" id="ping-accept" class="ping-sender-piinger"><i class="far fa-check-circle"></i></div>
+            <div style="display: none;" id="ping-reject" class="ping-sender-piinger"><i class="far fa-times-circle"></i></div>
+        </div>
+    </div>
+
+    <div class="ping-list">
+        <img class="imagepingapp" src="img/lsgoogle.png">
+    </div>
+</div>
+
+<!-- ping -->
+
+                    <div class="houses-app">
+                        <div class="houses-app-header">
+                            <div class="houses-app-header-tab houses-app-header-tab-selected" data-housetab="myhouses"><p>My Houses</p></div>
+                            <div class="houses-app-header-tab" data-housetab="mykeys"><p>My Keys</p></div>
+                        </div>
+
+                        <div class="house-app-myhouses-container">
+                            <div class="myhouses-house">
+                                <div class="myhouse-house-icon"><i class="fas fa-home"></i></div>
+                                <div class="myhouse-house-titel">Grove St. 1 | Tier 1</div>
+                                <div class="myhouse-house-details"><i class="fas fa-key"></i>&nbsp;&nbsp;5</div>
+                            </div>
+                        </div>
+
+                        <div class="house-app-mykeys-container">
+                        </div>
+
+                        <div class="myhouses-options-container">
+                            <div class="myhouses-options">
+                                <div class="myhouses-options-header">Grove St. 1</div>
+                                <div class="myhouses-option" id="myhouse-option-transfer">TRANSFER</div>
+                                <div class="myhouses-option" id="myhouse-option-keys">KEYS</div>
+                                <br>
+                                <br>
+                                <div class="myhouses-option" id="myhouse-option-close">CLOSE</div>
+                            </div>
+
+                            <div class="myhouse-option-transfer-container">
+                                <div class="myhouse-option-transfer-container-header">Transfer House</div>
+                                <input class="myhouse-option-transfer-container-citizenid" type="text" spellcheck="false" placeholder="CSN" required>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="myhouses-option" id="myhouse-option-transfer-confirm">CONFIRM</div>
+                                <div class="myhouses-option" id="myhouse-option-transfer-back">RETURN</div>
+                            </div>
+
+                            <div class="myhouse-option-keys-container">
+                                <div class="keys-container">
+                                </div>
+                                <div class="myhouses-option" id="myhouse-option-keys-back">RETURN</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jobcenter-app">
+                        <div class="jobcenter-header">
+                            <p>Job Center</p>
+                        </div>
+
+                        <div class="jobcenter-list">
+                        </div>
+                    </div>
+
+                    <div class="garage-app">
+                        <div class="garage-app-header">
+                            My Garage
+                        </div>
+                        <div class="garage-homescreen">
+                            <div class="garage-vehicles">
+                            </div>
+                        </div>
+
+                         <div class="garage-detailscreen">
+                            <div class="garage-cardetails">
+                                <div class="vehicle-brand"><span class="vehicle-detail">Brand</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-model"><span class="vehicle-detail">Model</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-plate"><span class="vehicle-detail">License Plate</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-garage"><span class="vehicle-detail">Garage</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-status"><span class="vehicle-detail">Status</span><span class="vehicle-answer">BMW M5</span></div>
+                                &nbsp;
+                                <div class="vehicle-fuel"><span class="vehicle-detail">Fuel</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-engine"><span class="vehicle-detail">Engine</span><span class="vehicle-answer">BMW M5</span></div>
+                                <div class="vehicle-body"><span class="vehicle-detail">Bodywork</span><span class="vehicle-answer">BMW M5</span></div>
+
+                                <div class="return-track">
+                                    <div id="return-button">
+                                        RETURN
+                                    </div>
+                                    <div id="track-vehicle">
+                                        TRACK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-app">
+                        <div class="gallery-app-header">
+                            My Gallery
+                        </div>
+                        <div class="gallery-homescreen">
+                            <div class="gallery-images">
+                            </div>
+                        </div>
+
+                        <div class="gallery-detailscreen">
+                            <div class="gallery-details">
+                                <div class="imagedata"><img class="image" id="imagedata" style="width: 100%;" src="" alt=""></div>
+                                <div class="make-post-button">
+                                    <div id="make-post-button">
+                                        POST
+                                    </div>
+                                    <div id="delete-button">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="return-button">
+                                    <div id="return-button">
+                                        RETURN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-postscreen">
+                            <div class="gallery-details">
+                                <div class="imageTweetData"><textarea id="new-textarea" spellcheck="false" required></textarea></div>
+                                <div class="posts-button">
+                                    <div id="tweet-button">
+                                        <i class="fab fa-twitter fa-lg"></i>
+                                    </div>
+                                    <div id="advert-button">
+                                        <i class="fas fa-ad fa-lg"></i>
+                                    </div>
+                                </div>
+                                <div class="return-button">
+                                    <div id="returndetail-button">
+                                        RETURN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="camera-app">
+                        <div class="camera-homescreen">
+                            <div class="camera-image">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trucker-app">
+                        <div class="trucker-header">
+                            <span class="trucker-header-name"><span style="font-size: 1vh; color: rgba(255, 255, 255, 0.6);">Welcome</span><br><span id="trucker-name">Jay Yay</span></span>
+                            <div class="trucker-header-progress">
+                                <div class="trucker-header-progress-fill"></div>
+                                <span class="trucker-header-progress-text" id="trucker-header-progress-current" style="float: left;">Current: 100 REP</span>
+                                <span class="trucker-header-progress-text" id="trucker-header-progress-next" style="float: right;">Next: 200 REP</span>
+                            </div>
+                            <!-- <div class="trucker-header-currentlevel">1</div> -->
+                            <span class="trucker-header-description">Your current progression<br><span id="trucker-header-tier">Tier 1</span></span>
+                        </div>
+
+                        <div class="trucker-jobinfo">
+                            <div class="trucker-jobinfo-nojob">
+                                <i class="fas fa-ban"></i>
+                                <span id="trucker-jobinfo-nojob-text">You are currently not working</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lawyers-app">
+                        <div class="lawyers-header">
+                            <p>Services</p>
+                            <span>Available services</span>
+                        </div>
+
+                        <div class="lawyers-list">
+                        </div>
+                    </div>
+                    <div class="crypto-app">
+                        <div class="crypto-header">
+
+                            <img src="./img/qbit.png" class="crypto-header-picture">
+
+                            <div class="crypto-header-values">
+                                <div class="crypto-header-value crypto-portofolio">
+                                    <span>Wallet</span>
+                                    <p>0.2555</p>-
+                                </div>
+                                <div class="crypto-header-value crypto-course">
+                                    <span>Value</span>
+                                    <p>$9000</p>
+                                </div>
+                                <div class="crypto-header-value crypto-volume">
+                                    <span>Volume</span>
+                                    <p>$2299.5‬</p>
+                                </div>
+                            </div>
+
+                            <div class="crypto-header-footer">
+                                <div class="crypto-header-footer-item" data-cryptotab="general">
+                                    General
+                                </div>
+                                <div class="crypto-header-footer-item" data-cryptotab="transactions">
+                                    Transactions
+                                </div>
+                                <div class="crypto-header-footer-item" data-cryptotab="course">
+                                    Value
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crypto-action-page">
+                            <div class="crypto-action-page-buy-crypto">
+
+                                <div class="crypto-action-page-header">Buy Qbit</div>
+
+                                <div class="crypto-action-page-wallet">Wallet: 1.000500 Qbit('s)</div>
+
+                                <i class="crypto-action-page-buy-crypto-input-coins-icon fas fa-coins"></i>
+                                <input type="number" oninput="this.value = Math.abs(this.value)" class="crypto-action-page-buy-crypto-input-coins" required spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                                <i class="crypto-action-page-buy-crypto-input-money-icon fas fa-dollar-sign"></i>
+                                <!-- <input type="number" oninput="this.value = Math.abs(this.value)" class="crypto-action-page-buy-crypto-input-money" required spellcheck="false" placeholder="1000" step="1.0" min="0"> -->
+                                <div class="crypto-action-page-buy-crypto-input-money">0 Dollars</div>
+
+                                <div class="crypto-action-page-buy-crypto-footer">
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="buy-crypto">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crypto-action-page-sell-crypto">
+
+                                <div class="crypto-action-page-header">Sell Qbit</div>
+
+                                <div class="crypto-action-page-wallet">Wallet: 1.000500 Qbit('s)</div>
+
+                                <i class="crypto-action-page-sell-crypto-input-coins-icon fas fa-coins"></i>
+                                <input type="number" oninput="this.value = Math.abs(this.value)" class="crypto-action-page-sell-crypto-input-coins" required spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                                <i class="crypto-action-page-sell-crypto-input-money-icon fas fa-dollar-sign"></i>
+                                <!-- <input type="number" onchange="this.value = Math.abs(this.value)" class="crypto-action-page-sell-crypto-input-money" required spellcheck="false" placeholder="1000" step="1.0" min="0"> -->
+                                <div class="crypto-action-page-sell-crypto-input-money">0 Dollars</div>
+
+                                <div class="crypto-action-page-buy-crypto-footer">
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="sell-crypto">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crypto-action-page-transfer-crypto">
+
+                                <div class="crypto-action-page-header">Transfer Qbit</div>
+
+                                <div class="crypto-action-page-wallet">Wallet: 0 Qbit('s)</div>
+
+                                <i class="crypto-action-page-transfer-crypto-input-coins-icon fas fa-coins"></i>
+                                <input type="number" onchange="this.value = Math.abs(this.value)" class="crypto-action-page-transfer-crypto-input-coins" required spellcheck="false" placeholder="1.000000" step="0.000001" min="0">
+
+                                <i class="crypto-action-page-transfer-crypto-input-money-icon fas fa-address-book"></i>
+                                <input type="texts" class="crypto-action-page-transfer-crypto-input-walletid" required spellcheck="false" placeholder="QB-12345678">
+
+                                <div class="crypto-action-page-buy-crypto-footer">
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="transfer-crypto">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="crypto-action-page-buy-crypto-footer-button" id="cancel-crypto">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crypto-page">
+                            <div class="cryptotab-general">
+                                <div class="cryptotab-general-actions">
+                                    <div class="cryptotab-general-action" data-action="buy-crypto">
+                                        <i class="fas fa-shopping-basket" style="color:green"></i>
+                                        <span class="cryptotab-general-action-title">BUY</span>
+                                        <span class="cryptotab-general-action-description">You can buy crypto here.</span>
+                                    </div>
+                                    <div class="cryptotab-general-action" data-action="sell-crypto">
+                                        <i class="fas fa-hand-holding-usd" style="color:red"></i>
+                                        <span class="cryptotab-general-action-title">SELL</span>
+                                        <span class="cryptotab-general-action-description">You can sell crypto here.</span>
+                                    </div>
+                                    <div class="cryptotab-general-action" data-action="transfer-crypto">
+                                        <i class="fas fa-share" style="color:orange"></i>
+                                        <span class="cryptotab-general-action-title">TRANSFER</span>
+                                        <span class="cryptotab-general-action-description">You can transfer crypto here.</span>
+                                    </div>
+                                </div>
+                                <span class="crypto-walletid">Wallet ID: QB-12345678</span>
+                            </div>
+
+                            <div class="cryptotab-transactions">
+                                <div class="cryptotab-transactions-list">
+                                </div>
+                            </div>
+
+                            <div class="cryptotab-course">
+                                <div class="cryptotab-course-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meos-app">
+                        <input type="text" id="testerino">
+                        <div class="meos-app-header">
+                            <span id="meos-app-title">MDT</span>
+                            <span id="meos-app-name">Welcome Jay Nandes</span>
+                        </div>
+
+                        <div class="meos-homescreen">
+                            <div class="meos-blocks">
+                                <div class="meos-block" data-meosblock="person">
+                                    <i class="fas fa-user"></i>
+                                    <p>Person</p>
+                                </div>
+                                <div class="meos-block" data-meosblock="vehicle">
+                                    <i class="fas fa-car"></i>
+                                    <p>Vehicle</p>
+                                </div>
+                                <div class="meos-block" data-meosblock="houses">
+                                    <i class="fas fa-house-user"></i>
+                                    <p>House</p>
+                                </div>
+                                <div class="meos-block" data-meosblock="alerts">
+                                    <i class="fas fa-bell"></i>
+                                    <p>Alerts</p>
+                                </div>
+                            </div>
+
+                            <span class="meos-recent-header">Most recent alert</span>
+                            <div class="meos-recent-alerts">
+                                <div class="meos-recent-alert"> <span class="meos-recent-alert-title">You don't have any alerts!</span></div>
+                            </div>
+                        </div>
+
+                        <div class="meos-tabs">
+                            <div class="meos-person-page">
+                                <input class="person-search-input" type="text" spellcheck="false" required>
+                                <div class="confirm-search-person-test" id="search-pers">
+                                    <i class="fas fa-search"></i>
+                                </div>
+
+                                <div class="person-search-results">
+                                </div>
+                            </div>
+
+                            <div class="meos-houses-page">
+                                <input class="person-search-input-house" type="text" spellcheck="false" required>
+                                <div class="confirm-search-person-house">
+                                    <i class="fas fa-search"></i>
+                                </div>
+
+                                <div class="person-search-results">
+
+                                </div>
+                            </div>
+
+                            <div class="meos-vehicle-page">
+                                <input class="vehicle-search-input" type="text" spellcheck="false" required>
+                                <div class="confirm-search-vehicle">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="scan-search-vehicle">
+                                    <i class="fas fa-barcode"></i>
+                                </div>
+
+                                <div class="vehicle-search-results">
+                                    <!-- <div class="vehicle-search-result"> <div class="vehicle-search-result-name">T20</div> <div class="vehicle-search-result-plate">Kenteken: NL123456</div> <div class="vehicle-opensplit"></div> &nbsp; <div class="vehicle-search-result-owner">Eigenaar: Jay Nandes</div> &nbsp; <div class="vehicle-search-result-apk">APK: Ja</div> <div class="vehicle-search-result-warrant">Gesignaleerd: Ja</div> </div> -->
+                                </div>
+                            </div>
+
+                            <div class="meos-alerts-page">
+                                <div class="meos-clear-alerts">CLEAR</div>
+                                <div class="meos-alerts">
+                                </div>
+                            </div>
+
+                            <div class="meos-tabs-footer">
+                                <i class="fas fa-undo-alt" id="back-meos"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advert-app">
+                        <div class="advert-home">
+                            <div class="advert-header">
+                                <span id="advert-header-text">Advertisements</span>
+                                <span id="advert-header-name"></span>
+                            </div>
+                            <div class="advert-list">
+
+                            </div>
+                            <div class="test-slet">
+                                <i class="fas fa-plus test-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="new-advert">
+                            <div class="new-advert-header">
+                                <span id="new-advert-header-text">New advertisement</span>
+                            </div>
+
+                            <textarea class="new-advert-textarea" spellcheck="false" required></textarea>
+                            <span><textarea id="advert-new-url" style="text-align:left; padding-left:15px;" placeholder="Picture URL" cols="30" rows="10" spellcheck="false"></textarea></span>
+
+                            <div class="new-advert-footer">
+                                <div class="new-advert-footer-item" id="new-advert-submit">
+                                    <i class="fas fa-check-circle new-advert-icon"></i>
+                                </div>
+                                <div class="new-advert-footer-item" id="new-advert-photo">
+                                    <i class="fas fa fa-camera new-advert-icon"></i>
+                                </div>
+                                <div class="new-advert-footer-item" id="new-advert-back">
+                                    <i class="fas fa-arrow-circle-left new-advert-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mail-app">
+                        <div class="mail-home">
+                            <div class="mail-header">
+                                <span id="mail-header-text">Inbox</span>
+                                <span id="mail-header-mail">jay.nandes@gmail.com</span>
+                                <span id="mail-header-lastsync">Last synchronization 18:31</span>
+                            </div>
+
+                            <div class="mail-list">
+                            </div>
+                        </div>
+
+                        <div class="opened-mail">
+                            <div class="opened-mail-header">
+                                <div class="mail-back"><i class="fas fa-chevron-left" id="mail-back"></i></div>
+                                <div class="mail-subject"><p>Subject</p></div>
+                                <div class="mail-date"><p>19 February 2019 &nbsp; 08:19</p></div>
+                                <div class="mail-spacing"></div>
+                                <div class="mail-content"><p>
+                                    This is a test mail and will not be fully shown because thats what I'm testing.
+                                </p></div>
+                            </div>
+                            <div class="opened-mail-footer">
+                                <div class="opened-mail-footer-item">
+                                    <i class="fas fa-check-circle" id="accept-mail"></i>
+                                </div>
+                                <div class="opened-mail-footer-item">
+                                    <i class="fas fa-trash-alt" id="remove-mail"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store-app">
+                        <div class="store-header">
+                            <p>App Store</p>
+                        </div>
+                        <div class="store-apps">
+                            <div class="storeapp" data-app="territory">
+                                <div class="storeapp-icon">
+                                    <i class="fas fa-globe-europe"></i>
+                                </div>
+                                <div class="storeapp-title">
+                                    Territory
+                                </div>
+                                <div class="storeapp-creator">
+                                    Qbus
+                                </div>
+                                <div class="storeapp-download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download-password-container">
+                            <div class="download-password">
+                                <span id="download-password-title">Security</span>
+                                <span id="download-password-disclaimer">To download this application you must enter a password.</span>
+                                <input type="text" class="download-password-input" spellcheck="false" required>
+
+                                <div class="download-password-buttons">
+                                    <div class="download-password-accept"><i class="fas fa-check"></i></div>
+                                    <div class="download-password-deny"><i class="fas fa-times"></i></div>
+                                </div>
+
+                                <div class="download-progressbar">
+                                    <div class="download-progressbar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="racing-app">
+                        <div class="racing-overview">
+                            <div class="racing-app-header">
+                                Racing - Overview
+                            </div>
+
+                            <div class="racing-races">
+                            </div>
+
+                            <div class="racing-buttons">
+                                <div class="racing-button" id="setup-race">
+                                    <i class="fas fa-flag-checkered"></i> Setup
+                                </div>
+                                <div class="racing-button" id="leaderboards-race">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="racing-button" id="create-race">
+                                    <i class="fas fa-plus"></i> Create
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="racing-setup">
+                            <div class="racing-app-header">
+                                Racing - Setup
+                            </div>
+
+                            <span id="racing-setup-trackheader">Race Track</span>
+                            <div class="dropdown">
+                                <div class="select">
+                                  <span>Select a Track</span>
+                                  <i class="fa fa-chevron-left"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="dropdown-menu"></ul>
+                            </div>
+
+                            <span id="racing-setup-lapsheader">Laps</span>
+                            <input type="number" min="0" oninput="this.value = Math.abs(this.value)" class="racing-setup-laps" required spellcheck="false" placeholder="Number of laps (0 is Sprint)">
+
+                            <span id="racing-setup-informationheader">Race Information</span>
+                            <div class="racing-setup-information-distance">Select a Track</div>
+                            <div class="racing-setup-information-creator">Select a Track</div>
+                            <div class="racing-setup-information-wr">Select a Track</div>
+
+                            <div class="racing-setup-buttons">
+                                <div class="racing-setup-button" id="setup-race-accept" data-toggle="race-setup" data-placement="bottom" title="Accept">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="racing-setup-button" id="setup-race-cancel" data-toggle="race-setup" data-placement="bottom" title="Cancel">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="racing-create">
+                            <div class="racing-create-block">
+                                <span id="racing-create-tracknameheader">Track Name</span>
+                                <input type="text" class="racing-create-trackname" required spellcheck="false" placeholder="Name of your track">
+
+                                <div class="racing-create-buttons">
+                                    <div class="racing-create-button" id="racing-create-accept">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="racing-create-button" id="racing-create-cancel">
+                                        <i class="fas fa-times-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="racing-leaderboard">
+                            <div class="racing-app-header">
+                                Racing - Leaderboards
+                            </div>
+
+                            <span id="racing-leaderboards-header">Last Tracks</span>
+                            <div class="racing-leaderboards">
+                            </div>
+
+                            <div class="racing-leaderboard-details">
+                                <div class="racing-leaderboard-details-block">
+                                    <div class="racing-leaderboard-details-back"><i class="fas fa-times-circle"></i></div>
+                                    <div class="racing-leaderboard-details-block-trackname"><i class="fas fa-flag-checkered"></i> Prison</div>
+                                    <span id="leaderboard-list-header"><span style="float: left;">Racer</span><span style="margin-left: 5.55vh;"><i class="fas fa-stopwatch"></i></span><span style="float: right; margin-right: 2vh;">#</span></span>
+                                    <div class="racing-leaderboard-details-block-list">
+                                        <!-- <div class="row"> <div class="name">Jay Nandes</div><div class="time">00:04:55</div><div class="score">1</div> </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="racing-leaderboards-button">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+<!-- calculator -->
+                    <div class="calculator-app">
+                        <div class="calculator-header">
+                            <p>Calculator</p>
+                        </div>
+
+                        <div class="calculator-list">
+                            <form name="calc" class="calc">
+                                <input id="monitorcalc" type="text" value="" disabled name="display">
+                                <input id="shakhescalc" type="button" value="AC" onclick="ac()">
+                                <input id="shakhescalc" type="button" value="C" onclick="c()">
+                                <input id="shakhescalc" type="button" value="%" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="-" onclick="data(this.value)">
+                                <input id="" type="button" value="1" onclick="data(this.value)">
+                                <input id="" type="button" value="2" onclick="data(this.value)">
+                                <input id="" type="button" value="3" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="*" onclick="data(this.value)">
+                                <input id="" type="button" value="4" onclick="data(this.value)">
+                                <input id="" type="button" value="5" onclick="data(this.value)">
+                                <input id="" type="button" value="6" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="/" onclick="data(this.value)">
+                                <input id="" type="button" value="7" onclick="data(this.value)">
+                                <input id="" type="button" value="8" onclick="data(this.value)">
+                                <input id="" type="button" value="9" onclick="data(this.value)">
+                                <input id="minishalhcalc" type="button" value="+" onclick="data(this.value)">
+                                <input id="" type="button" value="." onclick="data(this.value)">
+                                <input id="" type="button" value="0" onclick="data(this.value)">
+                                <input id="" type="button" value="=" onclick="equal()">
+                                <div style="clear: both;"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="twitter-app">
+
+                        <div class="twitter-home-tab">
+                             <div class="twitter-no-tweets"><p>No tweets</p></div>
+                        </div>
+
+                        <div class="twitter-mentions-tab">
+                            <div class="twitter-no-tweets"><p>No mentions</p></div>
+                        </div>
+
+                        <div class="twitter-hashtags-tab">
+                            <div class="twitter-hashtag-tweets">
+                                <div class="twitter-tweet">
+                                </div>
+                            </div>
+                            <div class="twitter-hashtags">
+                                <div class="twitter-no-tweets"><p>No hashtags</p></div>
+                            </div>
+                        </div>
+
+                        <div class="twitter-new-tweet">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+
+                        <div class="twitter-new-tweet-tab">
+                            <div class="twitter-new-tweet-header"><p>New Tweet</p></div>
+
+                            <textarea id="tweet-new-message" placeholder="Twitter message" cols="30" rows="10" spellcheck="false" required></textarea>
+                            <span><textarea id="tweet-new-url" style="text-align:left; padding-left:15px;" placeholder="Picture URL" cols="30" rows="10" spellcheck="false"></textarea></span>
+                            <div class="twitter-new-tweet-buttons">
+                                <div class="twitter-new-tweet-button" id="send-tweet"><p>Send</p></div>
+                                <div class="twitter-new-tweet-button" id="take-pic"><p>Take Pic</p></div>
+                                <div class="twitter-new-tweet-button" id="cancel-tweet"><p>Cancel</p></div>
+                            </div>
+                        </div>
+
+                        <div class="twitter-header">
+                            <div id="twitter-home" data-twittertab="twitter-home" class="twitter-header-tab selected-twitter-header-tab"><i class="fas fa-home"></i></div>
+                            <div id="twitter-mentions" data-twittertab="twitter-mentions" class="twitter-header-tab"><i class="fas fa-at"></i></div>
+                            <div id="twitter-hashtags" data-twittertab="twitter-hashtags" class="twitter-header-tab"><i class="fas fa-hashtag"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="bank-app">
+                        <div class="bank-app-loading">
+                            <img src="../html/img/apps/visa.png" class="qvisa">
+                            <span id="qbank-text">.......</span>
+                        </div>
+                        <div class="bank-app-loaded">
+                            <div class="bank-app-header">
+                                <div data-headertype="accounts" class="bank-app-header-button bank-app-header-button-selected"> <i class="fas fa-align-left"></i> <p>Accounts</p> </div>
+                                <div data-headertype="invoices" class="bank-app-header-button"> <i class="fas fa-file-invoice"></i> <p>Invoices</p> </div>
+                            </div>
+
+                            <div class="bank-app-accounts">
+                                <div class="bank-app-account">
+                                    <div class="bank-app-account-title">Account</div>
+                                    <!-- <div class="bank-app-account-number" id="iban-account">NL01QBBA012341234123</div> -->
+                                    <input type="text" class="bank-app-account-number" id="iban-account" readonly spellcheck="false">
+                                    <div class="bank-app-account-balance">&#36; 5000,00</div>
+                                </div>
+
+                                <div class="bank-app-account-actions">
+                                    <i id="transfer-money" class="fas fa-exchange-alt bank-app-account-action-transfer"></i>
+                                </div>
+                            </div>
+
+                            <div class="bank-app-transfer">
+                                <div class="bank-app-transfer-header">Transfer Money</div>
+
+                                <i class="bank-transfer-iban-icon fas fa-credit-card"></i>
+                                <input type="text" id="bank-transfer-iban" class="bank-transfer-input" required spellcheck="false">
+                                <i class="bank-transfer-mycontacts-icon fas fa-address-book"></i>
+
+                                <i class="bank-transfer-amount-icon fas fa-dollar-sign"></i>
+                                <input type="number" min="0" oninput="this.value = Math.abs(this.value)" id="bank-transfer-amount" class="bank-transfer-input" required spellcheck="false">
+
+                                <div class="bank-app-transfer-buttons">
+                                    <div class="bank-app-transfer-button" id="accept-transfer">Transfer</div>
+                                    <div class="bank-app-transfer-button" id="cancel-transfer">Cancel</div>
+                                </div>
+                            </div>
+
+                            <div class="bank-app-invoices">
+                                <div class="bank-app-invoices-list">
+                                    <!-- <div class="bank-app-invoice"> <div class="bank-app-invoice-title">Betaalverzoek <span style="font-size: 1vh; color: gray;">(Afzender: 0612345678)</span></div> <div class="bank-app-invoice-amount">&#36; 5000,-</div> <div class="bank-app-invoice-buttons"> <i class="fas fa-check-circle pay-invoice"></i> <i class="fas fa-times-circle decline-invoice"></i> </div> </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank-app-my-contacts">
+                            <div class="bank-app-my-contacts-header">My Contacts</div>
+                            <div class="bank-app-my-contacts-list-header">
+                                <input type="text" id="bank-app-my-contact-search" placeholder="Contact name" spellcheck="false">
+                            </div>
+                            <div class="bank-app-my-contacts-list">
+                                <!-- <div class="bank-app-my-contact"> <div class="bank-app-my-contact-firstletter">P</div> <div class="bank-app-my-contact-name">Pieter Post</div> </div> -->
+                            </div>
+                            <div class="bank-app-my-contacts-list-back">Return</div>
+                        </div>
+                    </div>
+                    <div class="whatsapp-app">
+                        <div class="whatsapp-header">
+                            <div class="whatsapp-header-top"></div>
+                            <div class="whatsapp-header-footer">
+                                <p>Whatsapp</p>
+                                <i id="whatsapp-search-chats" class="fas fa-search"></i>
+                                <input type="text" id="whatsapp-search-input" placeholder="Contactname" spellcheck="false">
+                            </div>
+                        </div>
+                        <div class="whatsapp-chats">
+                        </div>
+                        <div class="whatsapp-openedchat">
+                            <div class="whatsapp-header-openedchat">
+                                <div class="whatsapp-header-top-openedchat"></div>
+                                <div class="whatsapp-header-footer-openedchat">
+                                    <div class="whatsapp-openedchat-picture"></div>
+                                    <div class="whatsapp-openedchat-name"><p></p></div>
+                                    <i id="whatsapp-openedchat-back" class="fas fa-arrow-left"></i>
+                                </div>
+                            </div>
+                            <div class="whatsapp-openedchat-messages">
+                            </div>
+                            <div class="whatsapp-openedchat-input">
+                                <div class="whatsapp-extra-buttons">
+                                    <div class="whatsapp-extra-button" id="send-location"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="whatsapp-extra-button" id="send-image"><i class="fas fa-camera"></i></div>
+                                    <!-- <div class="whatsapp-extra-button" id="send-money"><i class="fas fa-money-bill"></i></div> -->
+                                </div>
+                                <input type="text" id="whatsapp-openedchat-message" placeholder="Message" spellcheck="false">
+                                <i class="fas fa-paper-plane" id="whatsapp-openedchat-send"></i>
+                                <i class="fas fa-ellipsis-v" id="whatsapp-openedchat-message-extras"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-currentcall-container">
+                    <div class="phone-currentcall-icon"><i class="fas fa-phone"></i></div>
+                    <div class="phone-currentcall-title">Outgoing call</div>
+                    <div class="phone-currentcall-contact">with 0612345678</div>
+                </div>
+
+                <!-- Phone Home Button -->
+                <div class="phone-footer">
+                    <div class="phone-home-container">
+                        <div class="phone-home-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen-notifications-container">
+            <div class="screen-notification-icon"><i class="fab fa-twitter"></i></div>
+            <div class="screen-notification-title"><p>New Tweet!</p></div>
+            <div class="screen-notification-content"><p>This is a test notification </p></div>
+        </div>
+
+        <div class="call-notifications">
+            <div class="call-notifications-icon"><i class="fas fa-phone"></i></div>
+            <div class="call-notifications-title"><p>Incoming Call</p></div>
+            <div class="call-notifications-content"><p>You have an incoming call from Test</p></div>
+        </div>
+
+        <!-- JavaScript File's -->
+        <script src="./js/config.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/settings.js"></script>
+        <script src="./js/phone.js"></script>
+        <script src="./js/twitter.js"></script>
+        <script src="./js/bank.js"></script>
+        <script src="./js/whatsapp.js"></script>
+        <script src="./js/garage.js"></script>
+        <script src="./js/mail.js"></script>
+        <script src="./js/meos.js"></script>
+        <script src="./js/crypto.js"></script>
+        <script src="./js/racing.js"></script>
+        <script src="./js/houses.js"></script>
+        <script src="./js/lawyers.js"></script>
+        <script src="./js/qstore.js"></script>
+        <script src="./js/trucker.js"></script>
+        <script src="./js/gallery.js"></script>
+        <script src="./js/camera.js"></script>
+        <script src="./js/jobcenter.js"></script>
+        <script src="./js/ping.js"></script>
+        <script src="./js/wenmo.js"></script>
+        <script src="./js/debt.js"></script>
+        <script src="./js/calculator.js"></script>
+        <script type="text/javascript">$('#whatsapp-openedchat-message').emojioneArea({inline: true, searchPosition: "bottom", shortnames: true})</script>
+        <!-- <script type="text/javascript">$('#tweet-new-message').emojioneArea({pickerPostion: 'bottom' ,inline: true, shortnames: true})</script> -->
+    </body>
+</html>
+    </script>
+    
+    

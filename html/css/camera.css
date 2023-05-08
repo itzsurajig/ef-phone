@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.camera-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    overflow: hidden;
+}
+
+
+.camera-homescreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0vh;
+}
+
+
+
+.loader {
+  z-index: 1000;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

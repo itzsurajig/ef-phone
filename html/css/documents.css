@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.documents-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #242833;
+}
+
+.documents-header {
+    position: absolute;
+    width: 86%;
+    height: 10%;
+    left: 6.5%;
+    right: 0;
+    color: white;
+    font-size: 1.8vh;
+}
+
+.documents-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+    margin: 0 0 0 9vh;
+}
+
+.documents-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 9vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+}
+
+.documents-list {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.documents-list::-webkit-scrollbar {
+    display: none;
+}
+
+.documents-tupe-text-btn{
+    position: absolute;
+    color: whitesmoke;
+    transition: all 0.2s ease 0s;
+    display: inline;
+    border-radius: 4px;
+    top: 77%;
+    left: 91%;
+}
+.documents-tupe-text-btn:hover{
+    color: rgb(187, 187, 187);
+}
+
+#documents-textarea {
+    border: none;
+    height: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    outline: none;
+    resize: none;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 12vh;
+    width: 80%;
+    margin-left: 10%;
+    background: none;
+    border-bottom: .1vh solid #f5f5f5ad;
+    color: whitesmoke;
+    font-size: 1.75vh;
+}
+
+#documents-textarea:focus {
+    border-bottom: .1vh solid #8ee074;
+}
+
+
+#documents-textarea::-webkit-inner-spin-button,
+#documents-textarea::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#documents-textarea::-webkit-scrollbar {
+	width: 0.2vh;
+}
+
+#documents-textarea::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+}
+
+#documents-textarea-new {
+    border: none;
+    height: 40vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    outline: none;
+    resize: none;
+    transition: border-bottom 0.1s ease-in-out;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 12vh;
+    width: 90%;
+    margin-left: 5%;
+    background: none;
+    border-bottom: .1vh solid #f5f5f5ad;
+    color: #cacaca;
+    font-size: 1.75vh;
+}
+
+#documents-textarea-new::-webkit-inner-spin-button,
+#documents-textarea-new::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#documents-textarea-new::-webkit-scrollbar {
+	width: 0.2vh;
+}
+
+#documents-textarea-new::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+}
+
+
+
+
+.documents-form-style-body{
+    width: 95%;
+    background-color: #2c465f;
+    margin: 2% 2%;
+    padding: 3% 3%;
+    border-radius: 4px;
+    border-bottom: 0.1vh solid rgba(245, 245, 245, 0.68);
+    transition: 0.2s;
+    color: whitesmoke;
+}
+.documents-form-style-body:hover{
+    background-color: #0d1218c0;
+}
+
+
+
+
+.documents-dropdown {
+    position: relative;
+    width: 22vh;
+    display: inline-block;
+    border-bottom: 0.1vh solid rgba(245, 245, 245, 0.68);
+    transition: all .5s ease;
+    font-size: 14px;
+    text-align: left;
+    top: 68%;
+    left: 3%;
+    color: whitesmoke;
+    background-color: none;
+    outline: none;
+}
+
+.documents-dropdown .documents-select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+
+.documents-dropdown .documents-select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+
+.documents-dropdown.active .documents-select > i {
+    transform: rotate(-90deg)
+}
+
+.documents-dropdown .documents-dropdown-menu {
+    position: absolute;
+    background-color: #484848;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    overflow: hidden;
+    display: none;
+    max-height: 420px;
+    overflow-y: auto;
+    z-index: 9
+}
+
+.documents-dropdown .documents-dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+
+.documents-dropdown .documents-dropdown-menu {
+    padding: 0;
+    list-style: none
+}
+
+.documents-dropdown .documents-dropdown-menu li:hover {
+    background-color: #767676
+}
+
+.documents-dropdown .documents-dropdown-menu li:active {
+    background-color: #767676
+}
+
+.document-body-class-body-main{
+    color: whitesmoke;
+}
+
+.document-body-class-title{
+    margin-left: 5%;
+}
+
+.documents-body-btn-class{
+    display: inline-flex;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.documents-body-btn-one{
+    color: #8ee074;
+    transition: 0.2s;
+}
+.documents-body-btn-one:hover{
+    color: #6cac59;
+}
+
+.documents-body-btn-two{
+    color: #f5a15b;
+    margin-left: 60%;
+    transition: 0.2s;
+}
+.documents-body-btn-two:hover{
+    color: #c27e47;
+}

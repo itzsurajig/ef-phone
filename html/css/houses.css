@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.houses-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.houses-app-header {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    top: 6vh;
+}
+
+.houses-app-header-tab {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    transition: .075s linear;
+}
+
+.houses-app-header-tab > p {
+    font-size: 1.5vh;
+    color: rgba(255, 255, 255, 0.5);
+    transition: .075s linear;
+}
+
+.houses-app-header-tab-selected {
+    border-bottom: .3vh solid #16a8c2;
+}
+
+.houses-app-header-tab-selected > p {
+    color: #20bed3;
+}
+
+.house-app-myhouses-container {
+    position: absolute;
+    width: 85%;
+    height: 77%;
+    margin: 0 auto;
+    left: 0vw;
+    right: 0;
+    top: 12vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.house-app-myhouses-container::-webkit-scrollbar {
+    display: none;
+}
+
+.house-app-mykeys-container {
+    display: none;
+    position: absolute;
+    width: 85%;
+    height: 77%;
+    margin: 0 auto;
+    left: 0vw;
+    right: 0;
+    top: 12vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.house-app-mykeys-container::-webkit-scrollbar {
+    display: none;
+}
+
+.myhouses-house {
+    position: relative;
+    height: 7.5vh;
+    width: 100%;
+    transition: all 0.05s linear 0s;
+    margin-bottom: 10px;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 4rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.myhouses-house:hover {
+    background-color: #14bedc;
+}
+
+.myhouse-house-icon {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+
+.myhouse-house-icon > i {
+    text-align: center;
+    line-height: 7.5vh;
+    color: white;
+    font-size: 1.7vh;
+}
+
+.myhouse-house-titel {
+    position: absolute;
+    left: 5.5vh;
+    top: 1.7vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vh;
+}
+
+.myhouse-house-details {
+    position: absolute;
+    left: 5.5vh;
+    bottom: 1.7vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vh;
+}
+
+.myhouse-house-details > i {
+    font-size: 1vh;
+}
+
+.myhouses-options-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myhouses-options {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    left: 0vw;
+    right: 0;
+    background-color: rgb(36, 36, 36);
+    border-radius: .5vh;
+    box-shadow:
+    inset 0 0 1vh .2vh rgba(0, 0, 0, 0.281),
+    0 0 1vh .2vh rgba(0, 0, 0, 0.253);
+    top: 15vh;
+}
+
+.myhouses-options-header {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    color: rgb(255 255 255);
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vh;
+    border-bottom: .1vh solid rgba(0, 0, 0, 0.26);
+}
+
+.myhouses-option {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: .8vh;
+    width: 12vh;
+    height: 5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    border-radius: .3vh;
+    top: 6vh;
+    box-shadow: inset 0 0 1vh .2vh rgba(0, 0, 0, 0.05);
+    text-align: center;
+    line-height: 5vh;
+    transition: .05s linear;
+}
+
+#myhouse-option-transfer {
+    background-color: #0097e6;
+}
+
+#myhouse-option-transfer:hover {
+    background-color: #00a8ff;
+}
+
+#myhouse-option-keys {
+    background-color: #e1b12c;
+}
+
+#myhouse-option-keys:hover {
+    background-color: #fbc531;
+}
+
+#myhouse-option-close {
+    background-color: #c23616;
+}
+
+#myhouse-option-close:hover {
+    background-color: #e84118;
+}
+
+#myhouse-option-transfer-confirm {
+    background-color: #27ae60;
+}
+
+#myhouse-option-transfer-confirm:hover {
+    background-color: #2ecc71;
+}
+
+#myhouse-option-transfer-back {
+    background-color: #c23616;
+}
+
+#myhouse-option-transfer-back:hover {
+    background-color: #e74c3c;
+}
+
+.myhouse-option-transfer-container {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    left: 35vw;
+    /* left: 0; */
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4vh;
+    box-shadow:
+    inset 0 0 1vh .2vh rgba(0, 0, 0, 0.281),
+    0 0 1vh .2vh rgba(0, 0, 0, 0.253);
+    top: 15vh;
+}
+
+.myhouse-option-keys-container {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    left: 35vw;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4vh;
+    box-shadow:
+    inset 0 0 1vh .2vh rgba(37, 37, 37, 0.281),
+    0 0 1vh .2vh rgba(0, 0, 0, 0.253);
+    top: 15vh;
+}
+
+.myhouse-option-transfer-container-header {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    color: rgb(255 255 255);
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vh;
+    border-bottom: .1vh solid rgba(0, 0, 0, 0.26);
+}
+
+.myhouse-option-transfer-container-citizenid {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 5vh;
+    top: 7.5vh;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8vh;
+    text-indent: 1vh;
+    color: black;
+    background: rgb(255 255 255 / 63%);
+    border-bottom: .3vh solid #c0392b;
+    transition: .05s linear;
+}
+
+.myhouse-option-transfer-container-citizenid:focus {
+    border-bottom: .3vh solid #e67e22;
+}
+
+.myhouse-option-transfer-container-citizenid:valid {
+    border-bottom: .3vh solid #27ae60;
+}
+
+
+#myhouse-option-keys-back {
+    top: 22vh;
+    background-color: #c23616;
+}
+
+#myhouse-option-keys-back:hover {
+    background-color: #e74c3c;
+}
+
+.keys-container {
+    position: absolute;
+    width: 20vh;
+    height: 18vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.keys-container::-webkit-scrollbar {
+    display: none;
+}
+
+.house-key-holder {
+    display: inline-block;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    position: absolute;
+    padding: 1.2vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    color: white;
+}
+
+.house-key {
+    position: relative;
+    width: 100%;
+    height: 4.5vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .05s ease-in-out;
+}
+
+.house-key-delete {
+    position: absolute;
+    right: 0;
+    padding: 1.2vh;
+    padding-right: 1.5vh;
+    font-size: 1.5vh;
+    color: white;
+    transition: .05s ease-in-out;
+}
+
+.house-key:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.house-key-delete:hover {
+    color: rgb(201, 53, 53);
+}
+
+@-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake {
+    display: inline-block;
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.4s;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear
+}
+
+.mykeys-key {
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 10px;
+    transition: 0.1s ease;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.mykeys-key:hover {
+    background-color: #14bedc;
+}
+
+.mykeys-key-label {
+    position: absolute;
+    top: 0;
+    left: 30;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
+    margin: 1.5vh;
+}
+
+.mykeys-key-sub {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vh;
+    margin: 1.4vh;
+}

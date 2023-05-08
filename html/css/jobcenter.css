@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.jobcenter-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+}
+
+.jobcenter-header {
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    /* top: 8%; */
+    left: 0;
+    right: 0;
+    color: white;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 1.8vh;
+    /* margin: 0 auto; */
+}
+
+.jobcenter-header > p {
+    line-height: 12vh;
+    text-indent: 2vh;
+    margin: 0 0 0 9vh;
+}
+
+.jobcenter-header > span {
+    position: absolute;
+    top: 8vh;
+    left: 9vh;
+    font-size: 1.2vh;
+    height: 2vh;
+    color: white;
+}
+
+.jobcenter-list {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+    border-radius: .5vh;
+    overflow-y: scroll;
+}
+
+.jobcenter-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+.jobcenter-class-body-job{
+    color: whitesmoke;
+    background: #2c465f;
+    transition: 0.2s;
+    width: 95%;
+    padding: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    /* box-shadow: 0rem 0rem 0.2rem 0.02rem #000000a6; */
+}
+.jobcenter-class-body-job:hover{
+    background: #0d1218c0;
+}
+
+.jobcenter-showitems-other{
+    margin-left: 35%;
+    position: absolute;
+    display: initial;
+    visibility: hidden;
+}
+
+#jobcenter-icon-class{
+    padding-left: 1.3vh;
+    font-size: 140%;
+}
+.jobcenter-class-body-job:hover .jobcenter-showitems-other{
+    visibility: visible;
+}
+
+#jobcenter-icon-class:hover{
+    color: #8ee074;
+}

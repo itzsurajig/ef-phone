@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.bank-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.bank-app-header {
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    top: 6vh;
+}
+
+.bank-app-header-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 6vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .08s;
+}
+
+.bank-app-header-button-selected {
+    border-bottom: .3vh solid #14d5dc;
+}
+.bank-app-header-button > i {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .9vh;
+    font-size: 2vh;
+}
+.bank-app-header-button > p {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1.4vh;
+    font-size: 1.25vh;
+}
+
+.bank-app-accounts {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 13vh;
+    left: 30vh;
+}
+.bank-app-invoices {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 37vh;
+    top: 13vh;
+    left: 30vh;
+}
+.bank-app-invoices-list {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.bank-app-invoices-list::-webkit-scrollbar {
+    width: .5vh;
+    background-color: #14bedc;
+}
+.bank-app-invoice {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    letter-spacing: .05vh;
+    border-bottom: .2vh solid #363d4b;
+}
+.bank-app-invoice-title {
+    text-transform : capitalize;
+    position: absolute;
+    top: 1vh;
+    left: 2vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vh;
+}
+.bank-app-invoice-amount {
+    position: absolute;
+    bottom: 1vh;
+    left: 2vh;
+    color: rgba(255, 255, 255, 0.781);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.22vh;
+}
+.bank-app-invoice-buttons {
+    position: absolute;
+    right: 1.2vh;
+    bottom: .1vh;
+    height: 3vh;
+    width: 7vh;
+    text-align: center;
+    line-height: 3.5vh;
+}
+.bank-app-invoice-buttons > i {
+    margin-left: .5vh;
+    margin-right: .5vh;
+    font-size: 2vh;
+}
+.pay-invoice {
+    color: #4cd137;
+    transition: .1s;
+}
+.pay-invoice:hover {
+    color: #70f75b;
+}
+.decline-invoice {
+    color: #e84118;
+    transition: .1s;
+}
+.decline-invoice:hover {
+    color: #ff5f38;
+}
+.bank-app-transfer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    top: -100%;
+    z-index: 500;
+}
+.bank-app-account {
+    position: absolute;
+    background-color: rgba(23, 23, 23, 90%);
+    height: 9.5vh;
+    width: 80%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 1.5vh;
+    transition: all 0.1s ease 0s;
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+.bank-app-account:hover{
+    background-color: #14b4dc;
+    transition: .5s ease;
+}
+.bank-app-account-title {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1vh;
+    color: white;
+    font-size: 1.1vh;
+}
+.bank-app-account-number {
+    position: absolute;
+    top: 3vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1vh;
+    width: 100%;
+    color: white;
+    font-size: 1.1vh;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.bank-app-account-number::selection {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+.bank-app-account-balance {
+    position: absolute;
+    top: 6.5vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1vh;
+    color: white;
+    font-size: 1.5vh;
+}
+.bank-app-account-actions {
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+    bottom: 2.5vh;
+    height: 5vh;
+    width: 80%;
+    right: 0px;
+    left: 0px;
+    line-height: 5vh;
+    font-size: 2.5vh;
+    position: absolute;
+    transition: all 0.1s ease 0s;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.bank-app-account-actions:hover {
+    background-color: #14cfdc;
+    transition: .5s ease;
+}
+.bank-app-loaded {
+    display: none;
+    padding-left: 30vh;
+}
+.bank-app-loading {
+    position: absolute;
+    top: 0;
+    left: 0vh;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.qvisa {
+    position: absolute;
+    width: 10vh;
+    margin: 0 auto;
+    left: 0vh;
+    right: 0;
+    top: 22vh;
+    z-index: 101;
+}
+#qbank-text {
+    position: absolute;
+    top: 24vh;
+    left: 9vh;
+    font-size: 4.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    z-index: 100;
+    opacity: 0;
+}
+
+.bank-app-transfer-header {
+    position: absolute;
+    top: 5.5vh;
+    left: 6vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+}
+
+#bank-transfer-iban {
+    position: absolute;
+    top: 12vh;
+    left: 8vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f5f6fa;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+#bank-transfer-iban::-webkit-inner-spin-button {
+    display: none;
+}
+#bank-transfer-iban:focus {
+    border-bottom: 2px solid #fbc531;
+}
+#bank-transfer-iban:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+#bank-transfer-amount {
+    position: absolute;
+    top: 18vh;
+    left: 8vh;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f5f6fa;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgb(33,36,43); */
+    /* background: linear-gradient(0deg, rgba(33,36,43,0.5) 0%, rgba(178,132,254,0) 100%); */
+    height: 3.5vh;
+    width: 18vh;
+    text-indent: .4vh;
+    transition: .1s;
+    font-size: 1.3vh;
+    color: white;
+}
+#bank-transfer-amount::-webkit-inner-spin-button {
+    display: none;
+}
+
+#bank-transfer-amount:focus {
+    border-bottom: 2px solid #fbc531;
+}
+
+#bank-transfer-amount:valid {
+    border-bottom: 2px solid #6ab04c;
+}
+.bank-transfer-iban-icon  {
+    position: absolute;
+    top: 13.5vh;
+    left: 3.4vh;
+    font-size: 2.1vh;
+    color: white
+}
+.bank-transfer-amount-icon  {
+    position: absolute;
+    top: 19.2vh;
+    left: 3.5vh;
+    font-size: 2.4vh;
+    color: white
+}
+.bank-transfer-mycontacts-icon  {
+    position: absolute;
+    top: 25.5vh;
+    left: 3.5vh;
+    font-size: 2.2vh;
+    color: white
+}
+.bank-transfer-mycontacts-icon:hover {
+    color: #31e3fb;
+}
+.bank-app-transfer-buttons {
+    position: absolute;
+    bottom: 40px;
+    height: 5vh;
+    width: 100%;
+}
+.bank-app-transfer-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 4.5vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.4vh;
+    transition: .1s;
+}
+.bank-app-transfer-button:hover {
+    border-top: .2vh solid #14cfdc;
+}
+.bank-app-my-contacts {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    background: rgb(36, 36, 36);
+    z-index: 500;
+}
+
+.bank-app-my-contacts::-webkit-scrollbar {
+    display: none;
+}
+
+.bank-app-my-contacts-list::-webkit-scrollbar {
+    display: none;
+}
+
+.bank-app-my-contacts-header {
+    position: relative;
+    padding: 5vh 0 0 8vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: white;
+}
+.bank-app-my-contacts-list {
+    position: absolute;
+    height: 65%;
+    width: 75%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 14vh;
+    overflow-y: scroll;
+}
+.bank-app-my-contact {
+    position: relative;
+    width: 98%;
+    left: 2px;
+    height: 4.5vh;
+    transition: all 0.1s ease 0s;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+.bank-app-my-contact:hover {
+    background-color: #727e94;
+}
+.bank-app-my-contact-firstletter {
+    position: absolute;
+    background-color: #eb4d4b;
+    height: 3.5vh;
+    width: 3.5vh;
+    margin: .4vh;
+    margin-left: .35vh;
+    text-align: center;
+    line-height: 3.6vh;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.bank-app-my-contact-name {
+    position: absolute;
+    left: 5vh;
+    line-height: 4.5vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vh;
+    color: white;
+}
+.bank-app-my-contacts-list-header {
+    position: absolute;
+    top: 8.5vh;
+    height: 5vh;
+    width: 100%;
+}
+#bank-app-my-contact-search {
+    position: absolute;
+    border: none;
+    top: 1.2vh;
+    width: 17vh;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    color: white;
+    opacity: 1;
+    height: 2.5vh;
+    border-radius: 1vh;
+    font-family: Poppins, sans-serif;
+    outline: none;
+    text-indent: 1vh;
+    z-index: 100;
+    background: rgba(23, 23, 23, 90%);
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+#bank-app-my-contact-search::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+.bank-app-my-contacts-list-back {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vh;
+    transition: .1s;
+}
+.bank-app-my-contacts-list-back:hover {
+    border-top: 2px solid #4bc6eb;
+}

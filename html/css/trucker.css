@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.trucker-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #2f3640;
+    overflow: hidden;
+}
+
+.trucker-header {
+    position: absolute;
+    width: 84%;
+    height: 12vh;
+    background-color: #4b5868;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    top: 5vh;
+
+    border-radius: 1vh;
+
+    box-shadow: 0 0 1vh .15vh rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+.trucker-header-name {
+    position: absolute;
+    margin: 1.5vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.4vh;
+}
+
+.trucker-header-progress {
+    position: absolute;
+    width: 90%;
+    height: 1.2vh;
+    background-color: #181c20;
+    bottom: 0;
+    
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 2.5vh;
+
+    border-radius: 1vh;
+}
+
+.trucker-header-progress-text {
+    font-size: .8vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 1.8vh .75vh 0 .6vh;
+}
+
+.trucker-header-progress-fill {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+
+    background-color: rgb(156, 230, 20);
+
+    border-radius: 1vh;
+}
+
+.trucker-header-currentlevel {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 5vh;
+    height: 5vh;
+    
+    background-color: #536070;
+    border-radius: 50%;
+    
+    margin: 1.5vh;
+    box-shadow: 0 0 .5vh .1vh rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    line-height: 5vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(236, 236, 236);
+    font-size: 1.5vh;
+}
+
+.trucker-header-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+
+    margin: 1vh;
+}
+
+#trucker-header-tier {
+    float: right;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.trucker-jobinfo {
+    position: absolute;
+    width: 84%;
+    height: 37vh;
+    background-color: #4b5868;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    top: 18vh;
+
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh .15vh rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.trucker-jobinfo-nojob {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #3a3c3f;
+}
+
+.trucker-jobinfo-nojob > i {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    line-height: 15vh;
+
+    color: rgb(241, 63, 63);
+    font-size: 4vh;
+}
+
+#trucker-jobinfo-nojob-text {
+    position: absolute;
+
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    width: 20vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+
+    top: 11vh;
+
+    font-size: 1.7vh;
+}

@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@media all and (max-height: 812px) {
+    :root { font-size: 13px; }
+}
+@media all and (max-height: 750px) {
+    :root { font-size: 12px; }
+}
+@media all and (max-height: 700px) {
+    :root { font-size: 11px; }
+}
+@media all and (max-height: 650px) {
+    :root { font-size: 10px; }
+}
+@media all and (max-height: 600px) {
+    :root { font-size: 9px; }
+}
+
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* CSS Reset END */
+
+.disableSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+/* Complete Phone */
+.container {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    bottom: -70%;
+    /* bottom: 0%; */
+    right: 5vh;
+}
+/*  */
+
+.phone-currentcall-container {
+    display: none;
+    position: absolute;
+    height: 5.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 4vh;
+    z-index: 99;
+    transition: background-color .1s linear;
+    border-radius: 3vh;
+    animation: pulse 2s infinite;
+}
+.phone-currentcall-container:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.phone-currentcall-icon {
+    position: absolute;
+    top: 1.2vh;
+    left: 1.3vh;
+    font-size: 1.9vh;
+    color: white;
+    transform: rotate(90deg);
+}
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.phone-currentcall-title {
+    position: absolute;
+    top: 1vh;
+    left: 4vh;
+    font-size: 1.1vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.phone-currentcall-contact {
+    position: absolute;
+    bottom: 1vh;
+    left: 4vh;
+    font-size: 1vh;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Phone Container */
+.phone-frame {
+    position: absolute;
+    width: 29.3vh;
+    bottom: 0;
+    right: 0;
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+}
+
+.phone-container {
+    height: 61.7vh;
+    width: 29.3vh;
+    bottom: 1vh;
+    border-radius: 3vh;
+    right: 0.5vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.phone-background {
+    height: 58.9vh;
+    width: 28vh;
+    bottom: 1vh;
+    border-radius: 5vh;
+    right: 1vh;
+    margin: 4.9vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url('../img/backgrounds/background-1.png');
+}
+
+/* Phone Container END */
+/* -------------------------- */
+
+/* Phone Header */
+.phone-header {
+    width: 100%;
+    height: 5vh;
+    z-index: 141;
+    position: absolute;
+    color: white;
+}
+
+#phone-server {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vh;
+    padding: 2vh 0 0 1vh;
+    float: left;
+    color: white !important;
+}
+
+#player-id {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vh;
+    padding: 2vh 0 0 1vh;
+    float: left;
+    color: white !important;
+}
+
+#phone-time {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vh;
+    padding: 2vh 0 0 5.5vh;
+    float: right;
+    color: white !important;
+}
+
+#phone-icons {
+    font-size: 0.95vh;
+    padding: 2vh 1.5vh 0 0vh;
+    float: right;
+    color: white !important;
+}
+
+#phone-signal {
+    font-size: 1vh;
+    left: -0.3vh;
+    position: relative;
+}
+
+#phone-battery {
+    transform: rotate(-90deg);
+    top: -0.1vh;
+    position: relative;
+}
+
+/* Phone Header END */
+/* -------------------------- */
+
+/* Phone Application Contanier */
+.phone-application-container {
+    display: none;
+    position: absolute;
+    top: 8%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    z-index: 100;
+}
+/* Phone Application Container END */
+/* -------------------------- */
+
+/* Phone Footer */
+.phone-footer {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.phone-home-container {
+    position: relative;
+    height: 2.3vh;
+    width: 100%;
+    margin: 0 auto;
+    top: 2vh;
+    transform: translateY(-50%);
+    border-radius: 0.8vh;
+    transition: .15s;
+    z-index: 500;
+}
+
+.phone-home-button {
+    position: relative;
+    height: 0.4vh;
+    width: 16vh;
+    background-color: white;
+    border-radius: 2vh;
+    top: 80%;
+    transform: translateY(-50%);
+    margin: 0px auto;
+    transition: all 0.1s ease 0s;
+}
+
+/* Phone Footer END */
+
+/* Home Applications */
+.phone-applications {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.phone-application {
+    position: relative;
+    height: 4.8vh;
+    width: 4.6vh;
+    left: 0.4vh;
+    float: left;
+    margin-left: 1.75vh;
+    margin-top: 1.5vh;
+    border-radius: 1.25vh;
+    text-align: center;
+    /* box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.13); */
+    opacity: 0.9;
+    transition: .05s;
+}
+
+.phone-application:hover {
+    opacity: 1.0;
+}
+
+.phone-footer-applications {
+    position: absolute;
+    width: 100%;
+    bottom: 3.7vh;
+}
+/* .phone-footer-applications {
+    position: absolute;
+    width: 88%;
+    right: 300%;
+    bottom: 4vh;
+    left: -1vh;
+    background: #ffffff45;
+    border-radius: 100px;
+    transform: translateY(-3px);    display: flex;
+    align-items: center;
+
+    padding: 20px;
+    padding-top: 0vh;
+    padding-right: 350px;
+    padding-bottom: 1vh;
+    padding-left: .9vh;
+} */
+
+.phone-home-applications {
+    position: absolute;
+    width: 100%;
+    bottom: 30vh;
+}
+
+.phone-application > i {
+    line-height: 4.6vh;
+    font-size: 2vh;
+}
+
+.ApplicationIcon {
+    color: white;
+}
+/* Home Applications END */
+
+
+/* Phone Notification */
+
+.phone-notification-container {
+    position: absolute;
+    height: 5.5vh;
+    width: 22vh;
+    background-color: rgba(3, 68, 73, 0.9);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -8%;
+    border-radius: 3vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    z-index: 140;
+}
+
+.notification-icon {
+    position: absolute;
+    height: 100%;
+    width: 5vh;
+    text-align: center;
+    line-height: 5.7vh;
+    color: #e74c3c;
+    font-size: 2.5vh;
+}
+
+.notification-title {
+    position: absolute;
+    top: 1vh;
+    left: 4.5vh;
+    font-size: 1.1vh;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.notification-text {
+    position: absolute;
+    top: 2.7vh;
+    left: 4.5vh;
+    font-size: 1vh;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 16vh;
+    overflow: hidden;
+}
+
+/* Phone Notification END */
+
+.call-notifications {
+    display: none;
+    position: absolute;
+    background: #22bfe6ea;
+    height: 9vh;
+    width: 34vh;
+    bottom: 16vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+.call-notifications-shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.screen-notifications-container {
+    display: none;
+    position: absolute;
+    background: rgba(29, 160, 242, 0.9);
+    height: 9vh;
+    width: 34vh;
+    bottom: 5vh;
+    right: -35vh;
+    border-radius: 1.7vh;
+    z-index: -5;
+}
+
+.screen-notification-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: white;
+}
+
+.screen-notification-title {
+    position: absolute;
+    line-height: 5.5vh;
+    left: 7.5vh;
+    font-size: 1.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.screen-notification-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+.call-notifications-icon {
+    position: absolute;
+    line-height: 9.3vh;
+    left: 2vh;
+    font-size: 3.75vh;
+    color: white;
+    transform: rotate(90deg);
+}
+
+.call-notifications-title {
+    position: absolute;
+    line-height: 5.5vh;
+    left: 7.5vh;
+    font-size: 1.5vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.call-notifications-content {
+    position: absolute;
+    top: 4.2vh;
+    left: 7.5vh;
+    font-size: 1.2vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    height: 3.5vh;
+    width: 26vh;
+    overflow: hidden;
+}
+
+.app-unread-alerts {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    top: -.5vh;
+    left: -.5vh;
+    color: white;
+    text-align: center;
+    line-height: 2vh;
+    background: #d63031;
+    border-radius: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1vh;
+}
+
+.emergency-button {
+    position: absolute;
+    right: 3vh;
+    top: 10vh;
+    width: 33vh;
+    height: 20vh;
+    background-color: #004682;
+    /* border: .1vh solid #002f5831; */
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.199);
+}
+
+.emergency-button-header {
+    position: absolute;
+    background-color: #ffffff;
+    height: 3.5vh;
+    top: 0;
+    width: 100%;
+}
+
+.emergency-button-footer {
+    position: absolute;
+    background-color: #ffffff;
+    height: 2.5vh;
+    bottom: 0;
+    width: 100%;
+}
+
+.police-logo-2 {
+    position: absolute;
+    width: 6vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .5vh;
+}
+
+.police-logo-3 {
+    position: absolute;
+    width: 15vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* lockscreen */
+
+.lock-screen {
+    display: block;
+    height: 58vh;
+    width: 28vh;
+    bottom: 1vh;
+    border-radius: 6vh;
+    right: 1vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    z-index: 140;
+    overflow: hidden;
+    background-image: url('../img/backgrounds/lockscreen.png');
+}
+
+.ef-fingerprint {
+    height: 6vh;
+    width: 6vh;
+    filter: invert(100%);
+    position: absolute;
+    top: 48vh;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+    
+#ef-phone-time {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vh;
+    color: white !important;
+}
+
+.ef-fingerprint:hover {
+    filter: invert(50%);
+}
+
+.ef-app-icon {
+	margin-left: -0.1vh;
+    width: 4.8vh;
+}
+
+.ef-paytmapp-icon {
+	margin-left: -0.1vh;
+    width: 4.8vh;
+    padding: 0.2vh;
+}
