@@ -7,7 +7,7 @@ Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
 
 -- Webhooks
 Config.serverwebhook = "" ---enter your webhook link here don't forget to do this Important for camera work.
-
+--- Important to add a webhook
 
 
 --config here 
