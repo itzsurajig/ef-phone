@@ -14,11 +14,12 @@ Players can also access a range of services apps, including a mail app, and many
 
 
 <h1>Free Download</h1>
-https://ef-productions.tebex.io/package/5639623
+
+# [Tebex](https://ef-productions.tebex.io/package/5639623)
+
 <br>
 
-Join Discord For More Free Scripts<br>
-ᴇғ ᴘʀᴏᴅᴜᴄᴛɪᴏɴs™ : https://discord.gg/WbDp5GQ45t
+Join [Discord](https://discord.gg/WbDp5GQ45t) For More Free Scripts <br>
 
 # [Documentation](https://efdevelopment.gitbook.io/ef-phone) 👈
 
