@@ -48,16 +48,16 @@ Join Discord For More Free Scripts<br>
 - Make a folder make `[EF]` and put it in that folder<br>
 - Import `qb-phone.sql` in your database<br>
 - Add the following code to your server.cfg/resouces.cfg<br>
-```
-ensure ef-phone <br>
-ensure qb-core <br>
-ensure screenshot-basic <br>
-ensure qb-policejob <br>
-ensure qb-crypto <br>
-ensure qb-lapraces <br>
-ensure qb-houses <br>
-ensure qb-garages <br>
-ensure qb-banking <br>
+```md
+ensure ef-phone
+ensure qb-core
+ensure screenshot-basic
+ensure qb-policejob
+ensure qb-crypto
+ensure qb-lapraces
+ensure qb-houses
+ensure qb-garages
+ensure qb-banking
 ```
 
 
