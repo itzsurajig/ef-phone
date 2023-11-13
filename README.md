@@ -20,7 +20,7 @@ https://ef-productions.tebex.io/package/5639623
 Join Discord For More Free Scripts<br>
 ᴇғ ᴘʀᴏᴅᴜᴄᴛɪᴏɴs™ : https://discord.gg/WbDp5GQ45t
 
-# [Documentation](https://efdevelopment.gitbook.io/ef-phone)
+# [Documentation](https://efdevelopment.gitbook.io/ef-phone) 👈
 
 
 # License
