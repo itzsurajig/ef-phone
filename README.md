@@ -48,6 +48,7 @@ Join Discord For More Free Scripts<br>
 - Make a folder make `[EF]` and put it in that folder<br>
 - Import `qb-phone.sql` in your database<br>
 - Add the following code to your server.cfg/resouces.cfg<br>
+
 ```md
 ensure ef-phone
 ensure qb-core
