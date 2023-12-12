@@ -7,7 +7,7 @@ One standout feature is the fingerprint lockscreen, providing added security to 
 Stay connected with your friends and community through apps like Twitter, WhatsApp, and phone call. The Google Maps location app helps players navigate the game world with ease, while the garage app lets them manage their vehicles.
 
 Players can also access a range of services apps, including a mail app, and many more. With the EF-Phone script, you can offer a seamless and immersive experience for players in your game.
-
+ 
 
 ![EF-PHONE PIC](https://user-images.githubusercontent.com/104319683/233084085-719fbca7-e51c-4bed-b47a-23b117605c02.png)
 
