@@ -26,6 +26,7 @@ Join [Discord](https://discord.gg/WbDp5GQ45t) For More Free Scripts <br>
 
 # License
 
+
     QBCore Framework
     Copyright (C) 2021 Joshua Eger
 
