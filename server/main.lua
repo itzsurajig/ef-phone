@@ -1,4 +1,4 @@
-local QBCore = exports[Config.corename]:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 local QBPhone = {}
 local AppAlerts = {}
 local MentionedTweets = {}
