@@ -77,6 +77,9 @@ function QBPhone.SetPhoneAlerts(citizenid, app, alerts)
     end
 end
 
+print('EF Phone Made by EF Development BlasterSuraj')
+print('Discord:  https://discord.gg/ef-development-tm-936207653145833503')
+
 local function SplitStringToArray(string)
     local retval = {}
     for i in string.gmatch(string, '%S+') do

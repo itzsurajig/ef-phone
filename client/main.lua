@@ -61,6 +61,9 @@ local function IsNumberInContacts(num)
     return retval
 end
 
+print('EF Phone Made by EF Development BlasterSuraj')
+print('Discord:  https://discord.gg/ef-development-tm-936207653145833503')
+
 local function CalculateTimeToDisplay()
     local hour = GetClockHours()
     local minute = GetClockMinutes()
