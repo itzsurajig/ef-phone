@@ -6,7 +6,6 @@ local Hashtags = {}
 local Calls = {}
 local Adverts = {}
 local GeneratedPlates = {}
-local WebHook = ''
 local bannedCharacters = { '%', '$', ';' }
 local TWData = {}
 
@@ -586,10 +585,10 @@ QBCore.Functions.CreateCallback('qb-phone:server:GetCurrentLawyers', function(_,
 end)
 
 QBCore.Functions.CreateCallback('qb-phone:server:GetWebhook', function(_, cb)
-    if WebHook ~= '' then
-        cb(WebHook)
+    if Config.Webhook ~= '' then
+        cb(Config.Webhook)
     else
-        print('Set your webhook to ensure that your camera will work!!!!!! Set this on line 10 of the server sided script!!!!!')
+        print('Set your webhook in Config.Webhook in config.lua to ensure that your camera will work!!!!!! Set this on line 10 of the server sided script!!!!!')
         cb(nil)
     end
 end)
