@@ -16,7 +16,7 @@
     text-align: center;
     line-height: 12.5vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
 }
 
@@ -96,7 +96,7 @@
     transition: .05s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
 }
 
@@ -119,7 +119,7 @@
     transition: .05s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
 }
 
@@ -137,7 +137,7 @@
     transition: .05s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
 }
 #delete-button:hover {
@@ -160,7 +160,7 @@
     transition: .05s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
     background-color: #08a0e9;
 }
@@ -177,7 +177,7 @@
     transition: .05s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
     background-color: #ff8f1a;
 }
@@ -198,7 +198,7 @@
     border-bottom: 2px solid #1da0f200;
     resize: none;
     transition: border-bottom 0.1s ease-in-out;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 0.87vh;
     font-size: 1.4vh;
     top: 12vh;

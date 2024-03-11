@@ -1,5 +1,7 @@
 <h1>EF-Phone</h1>
 
+# New Version
+
 Introducing the EF-Phone script for the QB-Core framework, designed to mimic the sleek and stunning design of the iPhone 14. With its beautiful user interface, the EF-Phone script offers a range of convenient features for players in your game.
 
 One standout feature is the fingerprint lockscreen, providing added security to protect sensitive information. The script also includes popular payment apps such as PayPal and Paytm, allowing players to make quick payments using their in-game ID.
@@ -15,7 +17,7 @@ Players can also access a range of services apps, including a mail app, and many
 
 <h1>Free Download</h1>
 
-# [Tebex](https://ef-productions.tebex.io/package/5639623)
+# [Tebex](https://ef-development.tebex.io/package/5639623)
 
 <br>
 

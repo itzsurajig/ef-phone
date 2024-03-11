@@ -132,10 +132,7 @@ $(document).on('click', '#join-race', function(e){
                     }), function(IsBusy){
                         if (!IsBusy) {
                             $.post('https://ef-phone/JoinRace', JSON.stringify({
-                                RaceData: {
-                                    ...Data,
-                                    RaceId
-                                },
+                                ...Data
                             }));
                             $.post('https://ef-phone/GetAvailableRaces', JSON.stringify({}), function(Races){
                                 SetupRaces(Races);

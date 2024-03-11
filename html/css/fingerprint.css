@@ -1,0 +1,68 @@
+
+.lock-screen {
+    display: block;
+    /* height: 58vh;
+    width: 28vh; */
+    height: 61.7vh;
+    width: 29vh;
+    bottom: 1vh;
+    border-radius: 6vh;
+    right: 1vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    z-index: 140;
+    overflow: hidden;
+    background-image: url('../img/backgrounds/lockscreen.png');
+}
+
+.ef-fingerprint {
+    height: 6vh;
+    width: 6vh;
+    filter: invert(100%);
+    position: absolute;
+    top: 48vh;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+    
+/* #ef-phone-time {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vh;
+    color: white !important;
+} */
+
+#ef-phone-time2 {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%); 
+    font-size: 10vh;
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white !important;
+    box-shadow: inset;
+}
+
+.ef-fingerprint:hover {
+    filter: invert(50%);
+}
+
+.ef-app-icon {
+	margin-left: -0.1vh;
+    width: 4.8vh;
+}
+
+.ef-paytmapp-icon {
+	margin-left: -0.1vh;
+    width: 4.8vh;
+    padding: 0.2vh;
+}

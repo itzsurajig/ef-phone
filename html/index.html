@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.9/purify.min.js" integrity="sha512-VOTFfd4vxPpuE98m9UQTN7j2N2/Blw44lZMhRTnZQqA2gOHq7Yvn5bdIDjjAZuFqqkDtppcjMW+dN3GYbhM94g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
-    <title>EF Phone</title>
+    <title>QBCore Phone</title>
 
     <!-- CSS File's -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/tooltip.css">
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/phone.css">
@@ -29,12 +27,10 @@
     <link rel="stylesheet" href="./css/trucker.css">
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/camera.css">
-    <link rel="stylesheet" href="./css/jobcenter.css">
-    <link rel="stylesheet" href="./css/calculator.css">
     <link rel="stylesheet" href="./css/ping.css">
-    <link rel="stylesheet" href="./css/lsbn.css">
-    <link rel="stylesheet" href="./css/wenmo.css">
-    <link rel="stylesheet" href="./css/debt.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/fingerprint.css">
+    <!-- <link rel="stylesheet" href="./css/wenmo.css"> -->
 
     <!-- CDN's -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!-- JQuery -->
@@ -44,6 +40,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Outline&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Outline&family=PT+Sans+Narrow:wght@400;700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Outline&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+
 </head>
     <body style="background-color: transparent !important";>
         <div id="popup">
@@ -53,21 +62,27 @@
         </div>
         <div class="container disableSelection">
 
+
             <div class="lock-screen">
-                <div id="ef-phone-time">08:05</div>
+                <div id="ef-phone-time2">08:05</div>
                 <div class="ef-finger">
                     <img src="./img/fingerprint.png" class="ef-fingerprint">
                 </div>
             </div>
 
-            
+
+
+
             <img src="./img/ef-iphone-frame.png" class="phone-frame">
             <div class="phone-container phone-background">
                 <!-- Phone Header -->
                 <div class="phone-header">
+                    <div id="phone-server">   EF Phone</div>
+                    <!-- <div id="player-id">1</div> -->
+                    <!-- <div id="phone-time">08:05</div> -->
                     <div id="phone-icons">
-                        <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="right" title="EF 5G"></i>
-                        <i class="fas fa-battery-full" id="phone-battery" data-toggle="tooltip" data-placement="left"></i>
+                        <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="left" title="EF 5G"></i>
+                        <i class="fa fa-battery-full" id="phone-battery"> 100</i>
                     </div>
                 </div>
 
@@ -79,7 +94,11 @@
                 </div>
 
                 <!-- Home Applications -->
+                <!-- <div class="lock-screen">
+                </div> -->
                 <div class="phone-applications">
+                    <div id="ef-phone-time">08:05</div>
+                    <!-- <canvas id="clock" width="5" height="5" /> -->
                     <div class="phone-footer-applications">
                         <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="1"></div>
                         <div class="phone-application" data-toggle="tooltip" data-placement="bottom" title="" data-appslot="2"></div>
@@ -117,7 +136,7 @@
                 <!-- Container for all application's -->
                 <div class="phone-application-container">
                     <div class="settings-app">
-                        <div class="settings-app-header"><i class="fas fa-cogs"></i></div>
+                        <div class="settings-app-header"><i class="">EF Settings </i></div>
 
                         <div class="settings-app-tab-appereance">
                             <!-- <div class="settings-app-tab-header"><p>Appearance</p></div> -->
@@ -375,112 +394,6 @@
                         </div>
                     </div>
 
-                    <!-- news -->
-
-
-                    <div class="lsbn-app">
-
-                        <div class="phone-new-box-body" id="lsbn-box-new-add-text">
-                            <div class="phone-new-box-main">
-                                <input class="phone-new-input-class lsbn-input-yek" type="text" placeholder="Text">
-                                <input class="phone-new-input-class lsbn-input-doo" type="text" placeholder="Link">
-                                <p> </p>
-                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
-                                <div class="phone-new-box-btn box-new-green" id="lsbn-submit-to-send-text">Submit</div>
-                            </div>
-                        </div>
-
-                        <div class="lsbn-header">
-                            <div class="lsbn-send-news-for-chat" data-toggle="tooltip" title="Send News"><i class="fas fa-bullhorn"></i></div>
-                            <img class="lsbn-logo-style" src="./img/LSBNlogo.png">
-                        </div>
-
-                        <div class="lsbn-list">
-                        </div>
-                    </div>
-
-
-                    <div class="bill-app">
-
-                        <div class="phone-new-box-body" id="bill-box-new-for-add">
-                            <div class="phone-new-box-main">
-                                <input class="phone-new-input-class bill-input-one" type="number" min="1" placeholder="Player ID">
-                                <input class="phone-new-input-class bill-input-two" type="number" min="1" placeholder="Amount">
-                                <input class="phone-new-input-class bill-input-three" type="text" maxlength="50" placeholder="Reason">
-                                <p> </p>
-                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
-                                <div class="phone-new-box-btn box-new-green" id="bill-create-bill-ended" data-toggle="tooltip" title="Create Bill">Submit</div>
-                            </div>
-                        </div>
-
-                        <div class="phone-new-box-body" id="bill-box-new-for-accept">
-                            <div class="phone-new-box-main">
-                                <div class="bill-show-bodyclass bill-show-one" data-toggle="tooltip" title="Reason">a</div>
-                                <div class="bill-show-bodyclass bill-show-two" style="color: #6cac59;" data-toggle="tooltip" title="Amount to be paid">a</div>
-                                <div class="bill-show-bodyclass bill-show-three" data-toggle="tooltip" title="Sender Name">a</div>
-                                <p> </p>
-                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
-                                <div class="phone-new-box-btn box-new-green" id="bill-create-bill-accept">Submit</div>
-                            </div>
-                        </div>
-
-                        <div class="bill-header">
-                            <div class="bill-create-bill-btn" data-toggle="tooltip" title="Create Bill"><i class="fas fa-donate"></i></div>
-                        </div>
-
-                        <div class="bill-list">
-                        </div>
-                    </div>
-
-
-
-                    <!-- paytm -->
-
-
-                    <div class="paytm-app">
-
-                        <div class="phone-new-box-body" id="paytm-box-new-for-give">
-                            <div class="phone-new-box-main">
-                                <input class="phone-new-input-class paytm-input-one" type="number" min="1" placeholder="Player ID">
-                                <input class="phone-new-input-class paytm-input-two" type="number" min="1" placeholder="Amount">
-                                <input class="phone-new-input-class paytm-input-three" type="text" maxlength="50" placeholder="Reason">
-                                <p> </p>
-                                <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
-                                <div class="phone-new-box-btn box-new-green" id="paytm-send-money-ended" data-toggle="tooltip" title="Send Money">Submit</div>
-                            </div>
-                        </div>
-
-                        <div class="paytm-header">
-                            <div class="paytm-send-money-btn" data-toggle="tooltip" title="Send Money"><i class="fas fa-hand-holding-usd"></i></div>
-                        </div>
-
-                        <div class="paytm-list">
-                        </div>
-                    </div>
-
-
-<!-- paytm -->
-
-
-<!-- ping -->
-
-<div class="ping-app">
-    <div class="ping-header">
-        <div class="channel">
-            <input id="channel" type="number" min="1" name="channel" placeholder="Player ID">
-            <div style="display: block;" id="ping-send" class="ping-sender-piinger"><i class="fas fa-map-pin"></i> Request Location</div>
-            <div style="display: none;" id="ping-accept" class="ping-sender-piinger"><i class="far fa-check-circle"></i></div>
-            <div style="display: none;" id="ping-reject" class="ping-sender-piinger"><i class="far fa-times-circle"></i></div>
-        </div>
-    </div>
-
-    <div class="ping-list">
-        <img class="imagepingapp" src="img/lsgoogle.png">
-    </div>
-</div>
-
-<!-- ping -->
-
                     <div class="houses-app">
                         <div class="houses-app-header">
                             <div class="houses-app-header-tab houses-app-header-tab-selected" data-housetab="myhouses"><p>My Houses</p></div>
@@ -528,15 +441,6 @@
                         </div>
                     </div>
 
-                    <div class="jobcenter-app">
-                        <div class="jobcenter-header">
-                            <p>Job Center</p>
-                        </div>
-
-                        <div class="jobcenter-list">
-                        </div>
-                    </div>
-
                     <div class="garage-app">
                         <div class="garage-app-header">
                             My Garage
@@ -560,7 +464,7 @@
 
                                 <div class="return-track">
                                     <div id="return-button">
-                                        RETURN
+                                        Back
                                     </div>
                                     <div id="track-vehicle">
                                         TRACK
@@ -569,6 +473,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="gallery-app">
                         <div class="gallery-app-header">
                             My Gallery
@@ -596,7 +501,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="gallery-postscreen">
                             <div class="gallery-details">
                                 <div class="imageTweetData"><textarea id="new-textarea" spellcheck="false" required></textarea></div>
@@ -654,6 +558,7 @@
                         <div class="lawyers-list">
                         </div>
                     </div>
+
                     <div class="crypto-app">
                         <div class="crypto-header">
 
@@ -662,7 +567,7 @@
                             <div class="crypto-header-values">
                                 <div class="crypto-header-value crypto-portofolio">
                                     <span>Wallet</span>
-                                    <p>0.2555</p>-
+                                    <p>0.2555</p>
                                 </div>
                                 <div class="crypto-header-value crypto-course">
                                     <span>Value</span>
@@ -800,7 +705,7 @@
                             <div class="meos-blocks">
                                 <div class="meos-block" data-meosblock="person">
                                     <i class="fas fa-user"></i>
-                                    <p>Person</p>
+                                    <p>Citizens</p>
                                 </div>
                                 <div class="meos-block" data-meosblock="vehicle">
                                     <i class="fas fa-car"></i>
@@ -910,7 +815,7 @@
                         <div class="mail-home">
                             <div class="mail-header">
                                 <span id="mail-header-text">Inbox</span>
-                                <span id="mail-header-mail">jay.nandes@gmail.com</span>
+                                <span id="mail-header-mail">jay.nandes@efdev.com</span>
                                 <span id="mail-header-lastsync">Last synchronization 18:31</span>
                             </div>
 
@@ -938,6 +843,76 @@
                             </div>
                         </div>
                     </div>
+        <!-- ping -->
+
+        <div class="ping-app">
+        <div class="ping-header">
+        <div class="channel">
+        <input id="channel" type="number" min="1" name="channel" placeholder="Player ID">
+        <div style="display: block;" id="ping-send" class="ping-sender-piinger"><i class="fas fa-map-pin"></i> Request Location</div>
+        <div style="display: none;" id="ping-accept" class="ping-sender-piinger"><i class="far fa-check-circle"></i></div>
+        <div style="display: none;" id="ping-reject" class="ping-sender-piinger"><i class="far fa-times-circle"></i></div>
+        </div>
+        </div>
+
+        <div class="ping-list">
+        <img class="imagepingapp" src="img/lsgoogle.png">
+        </div>
+        </div>
+
+        <!-- ping -->
+        <!-- calculator -->
+        <div class="calculator-app">
+            <div class="calculator-header">
+                <p>Calculator</p>
+            </div>
+
+            <div class="calculator-list">
+                <form name="calc" class="calc">
+                    <input id="monitorcalc" type="text" value="" disabled name="display">
+                    <input id="shakhescalc" type="button" value="AC" onclick="ac()">
+                    <input id="shakhescalc" type="button" value="C" onclick="c()">
+                    <input id="shakhescalc" type="button" value="%" onclick="data(this.value)">
+                    <input id="minishalhcalc" type="button" value="-" onclick="data(this.value)">
+                    <input id="" type="button" value="1" onclick="data(this.value)">
+                    <input id="" type="button" value="2" onclick="data(this.value)">
+                    <input id="" type="button" value="3" onclick="data(this.value)">
+                    <input id="minishalhcalc" type="button" value="*" onclick="data(this.value)">
+                    <input id="" type="button" value="4" onclick="data(this.value)">
+                    <input id="" type="button" value="5" onclick="data(this.value)">
+                    <input id="" type="button" value="6" onclick="data(this.value)">
+                    <input id="minishalhcalc" type="button" value="/" onclick="data(this.value)">
+                    <input id="" type="button" value="7" onclick="data(this.value)">
+                    <input id="" type="button" value="8" onclick="data(this.value)">
+                    <input id="" type="button" value="9" onclick="data(this.value)">
+                    <input id="minishalhcalc" type="button" value="+" onclick="data(this.value)">
+                    <input id="" type="button" value="." onclick="data(this.value)">
+                    <input id="" type="button" value="0" onclick="data(this.value)">
+                    <input id="" type="button" value="=" onclick="equal()">
+                    <div style="clear: both;"></div>
+                </form>
+            </div>
+        </div>
+        <!-- calculator -->
+        <!-- paytm -->
+        <!-- <div class="paytm-app">
+            <div class="phone-new-box-body" id="paytm-box-new-for-give">
+                <div class="phone-new-box-main">
+                    <input class="phone-new-input-class paytm-input-one" type="number" min="1" placeholder="Player ID">
+                    <input class="phone-new-input-class paytm-input-two" type="number" min="1" placeholder="Amount">
+                    <input class="phone-new-input-class paytm-input-three" type="text" maxlength="50" placeholder="Reason">
+                    <p> </p>
+                    <div class="phone-new-box-btn box-new-red" id="box-new-cancel">Cancel</div>
+                    <div class="phone-new-box-btn box-new-green" id="paytm-send-money-ended" data-toggle="tooltip" title="Send Money">Submit</div>
+                </div>
+            </div>
+            <div class="paytm-header">
+                <div class="paytm-send-money-btn" data-toggle="tooltip" title="Send Money"><i class="fas fa-hand-holding-usd"></i></div>
+            </div>
+            <div class="paytm-list">
+            </div>
+        </div> -->
+<!-- paytm -->
 
                     <div class="store-app">
                         <div class="store-header">
@@ -976,6 +951,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="racing-app">
                         <div class="racing-overview">
                             <div class="racing-app-header">
@@ -1073,38 +1049,7 @@
                             </div>
                         </div>
                     </div>
-<!-- calculator -->
-                    <div class="calculator-app">
-                        <div class="calculator-header">
-                            <p>Calculator</p>
-                        </div>
 
-                        <div class="calculator-list">
-                            <form name="calc" class="calc">
-                                <input id="monitorcalc" type="text" value="" disabled name="display">
-                                <input id="shakhescalc" type="button" value="AC" onclick="ac()">
-                                <input id="shakhescalc" type="button" value="C" onclick="c()">
-                                <input id="shakhescalc" type="button" value="%" onclick="data(this.value)">
-                                <input id="minishalhcalc" type="button" value="-" onclick="data(this.value)">
-                                <input id="" type="button" value="1" onclick="data(this.value)">
-                                <input id="" type="button" value="2" onclick="data(this.value)">
-                                <input id="" type="button" value="3" onclick="data(this.value)">
-                                <input id="minishalhcalc" type="button" value="*" onclick="data(this.value)">
-                                <input id="" type="button" value="4" onclick="data(this.value)">
-                                <input id="" type="button" value="5" onclick="data(this.value)">
-                                <input id="" type="button" value="6" onclick="data(this.value)">
-                                <input id="minishalhcalc" type="button" value="/" onclick="data(this.value)">
-                                <input id="" type="button" value="7" onclick="data(this.value)">
-                                <input id="" type="button" value="8" onclick="data(this.value)">
-                                <input id="" type="button" value="9" onclick="data(this.value)">
-                                <input id="minishalhcalc" type="button" value="+" onclick="data(this.value)">
-                                <input id="" type="button" value="." onclick="data(this.value)">
-                                <input id="" type="button" value="0" onclick="data(this.value)">
-                                <input id="" type="button" value="=" onclick="equal()">
-                                <div style="clear: both;"></div>
-                            </form>
-                        </div>
-                    </div>
                     <div class="twitter-app">
 
                         <div class="twitter-home-tab">
@@ -1150,8 +1095,8 @@
 
                     <div class="bank-app">
                         <div class="bank-app-loading">
-                            <img src="../html/img/apps/visa.png" class="qvisa">
-                            <span id="qbank-text">.......</span>
+                            <img src="../html/img/apps/efbank.png" class="qbank-logo">
+                            <span id="qbank-text">Bank</span>
                         </div>
                         <div class="bank-app-loaded">
                             <div class="bank-app-header">
@@ -1206,6 +1151,7 @@
                             <div class="bank-app-my-contacts-list-back">Return</div>
                         </div>
                     </div>
+
                     <div class="whatsapp-app">
                         <div class="whatsapp-header">
                             <div class="whatsapp-header-top"></div>
@@ -1288,15 +1234,10 @@
         <script src="./js/trucker.js"></script>
         <script src="./js/gallery.js"></script>
         <script src="./js/camera.js"></script>
-        <script src="./js/jobcenter.js"></script>
         <script src="./js/ping.js"></script>
-        <script src="./js/wenmo.js"></script>
-        <script src="./js/debt.js"></script>
         <script src="./js/calculator.js"></script>
+        <!-- <script src="./js/wenmo.js"></script> -->
         <script type="text/javascript">$('#whatsapp-openedchat-message').emojioneArea({inline: true, searchPosition: "bottom", shortnames: true})</script>
         <!-- <script type="text/javascript">$('#tweet-new-message').emojioneArea({pickerPostion: 'bottom' ,inline: true, shortnames: true})</script> -->
     </body>
 </html>
-    </script>
-    
-    

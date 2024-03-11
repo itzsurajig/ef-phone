@@ -60,8 +60,10 @@ input[name="display"]{
 	text-align: left;
 	margin: 4vh 0.5vh;
 	width: calc(100% - 10px);
-	border: none;
+	border: 2px solid white;
+	border-radius: 2vh;
 	padding: 0 1vh;
+	box-shadow: 0 0 20px 0px black;
 }
 input[type="button"]{
 	font-size: 2vh;

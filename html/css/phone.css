@@ -10,7 +10,7 @@
 
 .phone-app-header {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2.5vh;
     top: 5vh;
     color: white;
@@ -21,7 +21,7 @@
 #total-contacts {
     position: relative;
     font-size: 1.1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     top: -3vh;
     color: white;
 }
@@ -40,13 +40,13 @@
     width: 25%;
     text-align: center;
     float: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     transition: .1s;
 }
 
 .phone-selected-footer-tab {
-    color: #00d9ff;
+    color: cyan;
 }
 
 .phone-contacts {
@@ -60,7 +60,7 @@
 .phone-keypad-header {
     padding-top: 6vh;
     padding-left: 3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
 }
 
@@ -78,8 +78,8 @@
     outline: none;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
     text-indent: 1vh;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: left;
     line-height: 3.9vh;
     font-size: 1.75vh;
     overflow: hidden;
@@ -106,7 +106,7 @@
 
 .phone-recent-header {
     padding-top: 8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: white;
     text-align: center;
@@ -137,7 +137,7 @@
 }
 
 .phone-recent-call:hover {
-    background-color: #28b8e4bb;
+    background-color: rgb(39, 65, 65);
 }
 .phone-recent-call-image {
     position: absolute;
@@ -150,7 +150,7 @@
     font-size: 1.6vh;
     color: white;
     border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     background: #4e54c8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -160,7 +160,7 @@
     top: 1.1vh;
     left: 6vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 .phone-recent-call-type {
     position: absolute;
@@ -174,7 +174,7 @@
     bottom: 1.1vh;
     right: 1.75vh;
     font-size: 1.2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
 }
 
@@ -214,16 +214,18 @@
     width: 33.33%;
     text-align: center;
     line-height: 7vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2vh;
     color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    transition: .1s;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0); */
+    transition: .5s;
 }
 
 .phone-keypad-key:hover {
     color: #6e6e6e;
-    border-bottom: 2px solid #0cdbff;
+    /* border-bottom: 2px solid #e74c3c; */
+    border-radius: 2vh;
+    border: 2px solid cyan;
 }
 
 .phone-contacts-header {
@@ -245,7 +247,7 @@
 }
 
 .phone-contacts-header > i:hover {
-    color: #14c5dc;
+    color: rgb(39, 65, 65);
 }
 
 /* #phone-search-icon {
@@ -271,14 +273,14 @@
     height: 2.5vh;
     border-radius: 1vh;
     box-shadow: 0 0 .2vh 0 rgba(0, 0, 0, 0.281);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     outline: none;
     text-indent: 1vh;
     z-index: 100;
 }
 
 #contact-search::placeholder{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .phone-contact-list::-webkit-scrollbar {
@@ -286,7 +288,7 @@
 }
 
 .phone-contact-list::-webkit-scrollbar-thumb {
-    background-color: #dc143c;
+    background-color: rgb(39, 65, 65);
 }
 
 .phone-contact-list {
@@ -310,11 +312,13 @@
     margin-top: 2px;
     margin-bottom: 10px;
     background-color: rgba(23, 23, 23, 90%);
-    border-radius: 2rem;
+    border-radius: 2vh;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
 }
 
 .phone-contact-firstletter {
+    /* background-image: url(../img/user.jpg);
+    background-color: transparent; */
     position: absolute;
     height: 3.4vh;
     width: 3.4vh;
@@ -323,7 +327,7 @@
     text-align: center;
     line-height: 3.5vh;
     border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
 }
 
@@ -331,7 +335,7 @@
     position: absolute;
     left: 5vh;
     line-height: 4.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
 }
 
@@ -345,7 +349,7 @@
 }
 
 .phone-contact-actions:hover {
-    color: #21cbe9;
+    color: #e74c3c;
 }
 
 .phone-contact-action-buttons {
@@ -371,7 +375,7 @@
 }
 
 .phone-contact-action-buttons > i:hover {
-    color: #14cfdc;
+    color: rgb(39, 65, 65);
 }
 .phone-add-contact {
     display: none;
@@ -386,7 +390,7 @@
 .phone-add-contact-header {
     padding-top: 6vh;
     padding-left: 8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2vh;
     color: white;
 }
@@ -400,7 +404,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -434,7 +438,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -464,7 +468,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -516,14 +520,14 @@
     height: 5vh;
     text-align: center;
     line-height: 4.3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     border-top: 2px solid #30336b00;
     transition: .1s;
     font-size: 1.4vh;
 }
 
 .phone-add-contact-button:hover {
-    border-top: 2px solid #4bd3eb;
+    border-top: 2px solid #eb4d4b;
 }
 
 /* EDIT CONTACT YEEY */
@@ -543,7 +547,7 @@
     color: white;
     padding-top: 6vh;
     padding-left: 3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2vh;
 }
 
@@ -556,7 +560,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -590,7 +594,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -620,7 +624,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.555);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 20vh;
     text-indent: .4vh;
@@ -672,14 +676,14 @@
     height: 5vh;
     text-align: center;
     line-height: 4.3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     border-top: 2px solid #30336b00;
     transition: .1s;
     font-size: 1.4vh;
 }
 
 .phone-edit-contact-button:hover {
-    border-top: 2px solid #4be0eb;
+    border-top: 2px solid #eb4d4b;
 }
 
 /* Phone Call App */
@@ -708,7 +712,7 @@
     position: relative;
     text-align: center;
     top: 7.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.1vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -717,7 +721,7 @@
     position: relative;
     text-align: center;
     top: 10vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 2.5vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -784,7 +788,7 @@
     position: relative;
     text-align: center;
     top: 7.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.1vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -793,7 +797,7 @@
     position: relative;
     text-align: center;
     top: 10vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 2.5vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -883,7 +887,7 @@
     position: relative;
     text-align: center;
     top: 7.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.1vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -892,7 +896,7 @@
     position: relative;
     text-align: center;
     top: 10vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 2.5vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -915,7 +919,7 @@
     position: relative;
     text-align: center;
     top: 28vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.2vh;
     text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
@@ -954,7 +958,7 @@
     height: 8vh;
     top: 5vh;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.6vh;
     line-height: 5vh;
     color: white;
@@ -985,13 +989,13 @@
     width: 100%;
     margin-bottom: 10px;
     background: rgba(23, 23, 23, 90%);
-    border-radius: 4rem;
+    border-radius: 0.15rem;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
     transition: .05s ease-in-out;
 }
 
 .suggested-contact:hover {
-    background-color: #14b4dc;
+    background-color: rgb(39, 65, 65);
 }
 
 .suggested-contact > i {
@@ -1006,13 +1010,13 @@
     position: absolute;
     left: 5vh;
     top: 2.1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.3vh;
 }
 
 .suggested-number {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.2vh;
 }
@@ -1025,87 +1029,4 @@
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Opera and Firefox */
-}
-
-
-
-.phone-new-box-body{
-    display: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 200%;
-    background-color: rgba(0, 0, 0, 0.624);
-    z-index: 700;
-}
-
-.phone-new-box-main{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 80%;
-    /* height: 100%; */
-    background-color: rgb(44, 70, 95);
-    border-radius: 4px;
-}
-
-.phone-new-input-class{
-    position: relative;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    /* height: 4vh; */
-    width: 80%;
-    /* border-radius: 1vh; */
-    border: none;
-    background: none;
-    outline: none;
-    /* box-shadow: 0rem 0rem 0.1rem 0.05rem #000000; */
-    text-indent: 1vh;
-    /* font-family: 'Poppins', sans-serif; */
-    text-align: left;
-    line-height: 3.9vh;
-    font-size: 1.75vh;
-    overflow: hidden;
-    color: white;
-    border-bottom: .1vh solid #f5f5f5ad;
-    transition: 0.25s;
-}
-
-.phone-new-box-btn{
-    display: inline;
-    width: 20%;
-    transition: 0.25s;
-    padding: 2%;
-    border-radius: 4px;
-    color: black;
-    font-size: 95%;
-    margin-top: 10%;
-}
-
-.box-new-red{
-    background: #f5a15b;
-    margin-left: 10%;
-}
-.box-new-red:hover{
-    background: #c27e47;
-}
-.box-new-green{
-    background: #8ee074;
-    margin-left: 27%;
-}
-.box-new-green:hover{
-    background: #6cac59;
-}
-
-.phone-new-box-main input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-.phone-new-input-class:focus {
-    border-bottom: .1vh solid #8ee074;
 }

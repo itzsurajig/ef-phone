@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: rgb(167, 162, 162);
+    background: rgb(0, 0, 0);
     overflow: hidden;
 }
 
@@ -15,17 +15,17 @@
 
 .mail-header {
     display: block;
-    height: 12vh;
+    height: 14vh;
     width: 100%;
-    background: rgba(0, 108, 134, 0.377);
+    background: rgb(0, 0, 0);
 }
 
 #mail-header-text {
     position: absolute;
     top: 5vh;
     left: 12vh;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5vh;
     color: white;
 }
 
@@ -33,7 +33,7 @@
     position: absolute;
     top: 7vh;
     left: 6vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
     color: white;
 }
@@ -42,17 +42,17 @@
     position: absolute;
     top: 10vh;
     right: 1.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1vh;
     color: white;
 }
 
 .mail-list {
     position: absolute;
-    width: 94%;
-    height: 44.5vh;
-    top: 15vh;
-    left: 1vh;
+    width: 99%;
+    height: 44.7vh;
+    top: 12vh;
+    left: .1vh;
     overflow-x: hidden !important;
     overflow-y: scroll;
 }
@@ -70,19 +70,21 @@
     margin-bottom: 10px;
     transition: .05s ease-in-out;
     background: rgba(23, 23, 23, 90%);
-    border-radius: 0.15rem;
-    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    /* border-radius: 1.5vh; */
+    border-left: 2px solid cyan;
+    /* box-shadow: 0rem 0rem 0.1rem 0.05rem #000000; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
 }
 
 .mail:hover {
-    background-color: #12caeb8f;
+    background-color: rgba(94, 94, 94, 0.596);
     transition: .05s ease-in-out;
 }
 
 .mail-sender {
     position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.6vh;
     color: white;
     left: 0.5vh;
     top: 1vh;
@@ -92,7 +94,7 @@
     position: absolute;
     top: 3.3vh;
     left: 0.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.15vh;
     color: white;
     max-width: 18vh;
@@ -111,7 +113,7 @@
 
 .mail-time {
     position: absolute;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.1vh;
     color: white;
     right: 0.5vh;
@@ -122,7 +124,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(36, 36, 36);
+    background: rgb(0, 0, 0);
     overflow: hidden;
     top: 0;
     left: -30vh;
@@ -147,7 +149,7 @@
 }
 
 .mail-back:hover #mail-back {
-    color: #dc143c;
+    color: rgb(39, 65, 65);
     transition: .05s ease-in-out;
 }
 
@@ -156,7 +158,7 @@
     color: white;
     top: 8vh;
     left: 2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     max-width: 22vh;
 }
@@ -171,7 +173,7 @@
     position: absolute;
     top: 13vh;
     left: 2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.1vh;
     color: white;
 }
@@ -193,7 +195,7 @@
     height: calc(100% - 250px);
     top: 17.3vh;
     left: 2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
     color: white;
     max-width: 23vh;
@@ -233,7 +235,7 @@
 }
 
 .opened-mail-footer-item:hover {
-    color: #dc143c;
+    color: rgb(39, 65, 65);
 }
 
 .opened-mail-footer-item:hover .mail-icon {
@@ -266,7 +268,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: rgb(36, 36, 36);
+    background: rgb(0, 0, 0);
     overflow: hidden;
 }
 
@@ -281,7 +283,7 @@
     position: absolute;
     top: 6vh;
     left: 8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: white;
 }
@@ -290,7 +292,7 @@
     position: absolute;
     top: 9vh;
     left: 6vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
     color: white;
 }
@@ -324,7 +326,7 @@
 
 .advert > p {
     margin-top: 1.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     max-width: 25vh;
     color: black;
     font-weight: bolder;
@@ -340,7 +342,7 @@
     top: .8vh;
     color: black;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
 }
 
@@ -373,7 +375,7 @@
     height: 100%;
     width: 100%;
     top: 0;
-    background: rgb(36, 36, 36);
+    background: rgb(0, 0, 0);
     overflow: hidden;
     left: -30vh;
 }
@@ -417,7 +419,7 @@
     position: absolute;
     top: 6vh;
     left: 6vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: white;
 }
@@ -431,7 +433,7 @@
     background-color: rgba(23, 23, 23, 90%);
     outline: none;
     resize: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 0.87vh;
     font-size: 1.4vh;
     top: 45vh;
@@ -460,7 +462,7 @@
     border: 2px solid rgb(255, 154, 46);
     background-color: rgba(23, 23, 23, 90%);
     padding: 1.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     transition: .1s linear;
 }
 
@@ -472,7 +474,7 @@
 .nomails {
     text-align: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     line-height: 20vh;
 }

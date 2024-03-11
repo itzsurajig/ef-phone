@@ -61,7 +61,7 @@
 }
 
 .crypto-action-page-buy-crypto-footer-button:hover {
-   color: #14c5dc;
+   color: rgb(39, 65, 65);
 }
 
 @keyframes Shake {
@@ -87,7 +87,7 @@
 .crypto-header {
     position: absolute;
     width: 100%;
-    height: 18vh;
+    height: 18.5vh;
     top: 5vh;
     text-align: center;
 }
@@ -108,22 +108,22 @@
     text-align: center;
     line-height: 4.4vh;
     font-size: 1.2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     transition: .05s ease-in-out;
 }
 
 .crypto-header-footer-item-selected {
-    border-bottom: .2vh solid #14b4dc;
+    border-bottom: .2vh solid rgb(39, 65, 65);
 }
 
 .crypto-page {
     position: absolute;
-    height: 54%;
+    height: 57%;
     width: 100%;
     background: rgb(38, 38, 38);
     bottom: 10px;
-    margin: 4;
-    left: 1;
+    margin: 0 auto;
+    left: 0;
     right: 0;
 }
 
@@ -144,7 +144,7 @@
     width: 33.33%;
     text-align: center;
     top: 2.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2vh;
 }
 
@@ -226,7 +226,7 @@
     position: absolute;
     top: 1.5vh;
     left: 4.7vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.4vh;
     color: white;
 }
@@ -235,7 +235,7 @@
     position: absolute;
     bottom: 1.5vh;
     left: 4.7vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.1vh;
 }
@@ -279,7 +279,7 @@
     position: absolute;
     top: 1.5vh;
     left: 4.7vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
     color: white;
 }
@@ -288,7 +288,7 @@
     position: absolute;
     bottom: 1.5vh;
     left: 4.7vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 1.1vh;
 }
@@ -322,13 +322,14 @@
 .cryptotab-general-action {
     position: relative;
     color: white;
-    width: 90%;
+    width: 85%;
     height: 6vh;
     margin: 1vh auto 0px;
     font-family: Poppins, sans-serif;
     transition: all 0.05s linear 0s;
     background: rgba(23, 23, 23, 90%);
-    border-radius: 0.15rem;
+    /* border-radius: 0.15rem; */
+    border-left: 2px solid cyan;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
 }
 
@@ -357,7 +358,7 @@
 }
 
 .cryptotab-general-action:hover {
-    background-color: #dc143c;
+    background-color: rgb(39, 65, 65);
 }
 
 .crypto-action-page-buy-crypto-input-money {
@@ -368,7 +369,7 @@
     border: none;
     outline: none;
     /* border-bottom: 2px solid #000000; */
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 18vh;
     text-indent: .4vh;
@@ -404,7 +405,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 18vh;
     text-indent: .4vh;
@@ -443,7 +444,7 @@
     border: none;
     outline: none;
     /* border-bottom: 2px solid #000000; */
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 18vh;
     text-indent: .4vh;
@@ -479,7 +480,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     /* background: rgb(33,36,43); */
     /* background: linear-gradient(0deg, rgba(33,36,43,0.5) 0%, rgba(178,132,254,0) 100%); */
     height: 3.5vh;
@@ -513,7 +514,7 @@
     position: absolute;
     left: 3vh;
     top: 6.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: white;
 }
@@ -522,7 +523,7 @@
     position: absolute;
     left: 3vh;
     top: 11vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
     color: white;
 }
@@ -535,7 +536,7 @@
     width: 100%;
     text-align: center;
     bottom: 4vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
 }
 
@@ -547,7 +548,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 18vh;
     text-indent: .4vh;
@@ -582,7 +583,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid #000000;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     height: 3.5vh;
     width: 18vh;
     text-indent: .4vh;

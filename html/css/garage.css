@@ -15,7 +15,7 @@
     text-align: center;
     line-height: 13.5vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
 }
 
@@ -52,31 +52,36 @@
     position: relative;
     height: 7vh;
     width: 100%;
-    background-color: rgba(23, 23, 23, 90%);
+    background-color: rgba(94, 94, 94, 0.9);
     border-radius: 1vh;
-    transition: .08s linear;
+    transition: 0.5s linear;
     margin-bottom: 1vh;
-    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    /* box-shadow: 0rem 0rem 0.1rem 0.05rem #000000; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
 }
 
 .garage-vehicle-firstletter {
     position: relative;
     line-height: 7vh;
     left: 1.2vh;
-    background-color: #4e67f5;
+    background-color: #000000;
     padding-top: 1.1vh;
     padding-bottom: 1.1vh;
     padding-left: 1.6vh;
     padding-right: 1.6vh;
     border-radius: 50%;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     transition: .05s linear;
 }
 
 .garage-vehicle:hover {
-    background-color: #14cfdccc;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 2vh;
+    /* height: 10vh; */
+    color: rgb(0, 0, 0);
 }
 
 .garage-vehicle-name {
@@ -85,114 +90,133 @@
     color: white;
     line-height: 7vh;
     font-size: 1.2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .garage-cardetails {
     position: absolute;
     /* background-color: rgba(255, 255, 255, 0.1); */
-    height: 78%;
+    height: 76%;
     width: 84%;
     margin: 0 auto;
     left: 0vh;
     right: 0;
-    top: 9vh;
+    top: 11vh;
 }
 
 .vehicle-brand {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    /* border: 1px solid white; */
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
 }
 
 .vehicle-model {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-plate {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
-    color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff;
+        box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-garage {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-status {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-fuel {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-engine {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 .vehicle-body {
     position: relative;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(54, 54, 54);
     padding: .8vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: .1vh solid #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border-bottom: .1vh solid #fff; */
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
+    border-radius: 0.5vh;
     margin-bottom: 1vh;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
 }
 
 
@@ -212,15 +236,19 @@
     margin: 2px;
     width: 50%;
     height: 5vh;
-    background-color: rgb(3, 178, 209);
-    border-radius: .3vh;
-    transition: .05s linear;
+    background-color: rgb(233, 233, 233);
+    border-radius: 1vh;
+    transition: 0.6s linear;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    box-shadow: 0 0 8px 0px rgb(100, 100, 100);
     font-size: 1.4vh;
 }
 
 .return-track > div:hover {
-    background-color: rgb(212, 212, 212);
+    background-color: cyan;
+    width: 100%;
+    margin: 3px;
+    box-shadow: 0 0 20px 0px rgb(100, 100, 100);
 }

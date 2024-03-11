@@ -10,11 +10,14 @@
 
 .settings-app-header {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: "Roboto Condensed", sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 3vh;
+    font-weight: bold;
     text-align: center;
     top: 70px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-style: normal;
 }
 
 .settings-app-tab-appereance {
@@ -33,18 +36,20 @@
 
 .settings-app-tab {
     position: relative;
-    width: 80%;
-    border-radius: 4rem;
+    width: 90%;
+    border-radius: 2vh;
     height: 6vh;
     margin-bottom: 10px;
-    color: white;
-    background: rgba(23, 23, 23, 90%);
-    left: 30px;
-    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    left: 15px;
+    /* box-shadow: 0rem 0rem 0.1rem 0.05rem #000000; */
+    box-shadow: 0 0 20px 0px black;
 }
 
 .settings-app-tab:hover {
-    background-color: #14b4dc;
+    background-color: #005299;
     transition: .5s ease;
 }
 
@@ -52,7 +57,7 @@
     position: absolute;
     top: -2.5vh;
     height: 2.6vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.17);
     width: 100%;
@@ -82,8 +87,8 @@
     position: absolute;
     left: 6.2vh;
     top: 1.2vh;
-    font-size: 1.2vh;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vh;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .settings-tab-description {
@@ -91,8 +96,8 @@
     left: 6.2vh;
     top: 3.2vh;
     font-size: 1.2vh;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(0, 0, 0);
 }
 
 .settings-background-tab {
@@ -103,7 +108,7 @@
     width: 100%;
     left: 0;
     right: 0;
-    background: rgb(36, 36, 36);
+    background: rgb(0, 0, 0);
 }
 
 .settings-profilepicture-tab {
@@ -114,7 +119,7 @@
     width: 100%;
     left: 0;
     right: 0;
-    background: rgb(36, 36, 36);
+    background: rgb(0, 0, 0);
 }
 
 .background-options {
@@ -126,18 +131,19 @@
 
 .background-option {
     position: relative;
-    width: 80%;
-    border-radius: 4rem;
+    width: 90%;
+    /* border-radius: 0.15rem; */
+    border-left: 2px solid cyan;
     height: 6vh;
     margin-bottom: 10px;
     color: white;
     background: rgba(23, 23, 23, 90%);
-    left: 30px;
+    left: 15px;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
 }
 
 .background-option:hover {
-    background-color: #14bedc;
+    background-color: rgb(39, 65, 65);
     transition: .5s ease;
 }
 
@@ -148,7 +154,7 @@
     text-align: center;
     line-height: 7vh;
     font-size: 2.3vh;
-    color: #31ddfb;
+    color: #fbc531;
 }
 
 .background-option-title {
@@ -159,7 +165,7 @@
     font-size: 1vh;
     color: white;
     font-size: 1.3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .background-option-description {
@@ -170,7 +176,7 @@
     font-size: 1vh;
     color: white;
     font-size: 1.1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .background-option-current {
@@ -179,8 +185,8 @@
     top: 2.5vh;
     text-align: center;
     font-size: 1.6vh;
-    color: rgb(46, 189, 214);
-    font-family: 'Poppins', sans-serif;
+    color: green;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .background-buttons {
@@ -198,13 +204,13 @@
     text-align: center;
     line-height: 4.7vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     transition: .05s;
 }
 
 .background-button:hover {
-    border-top: .3vh solid #14bedc;
+    border-top: .3vh solid rgb(39, 65, 65);
 }
 
 .background-custom {
@@ -223,7 +229,7 @@
 }
 
 .background-custom-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 2vh;
     font-size: 1.5vh;
     text-align: center;
@@ -237,7 +243,7 @@
     outline: none;
     height: 3.5vh;
     width: 21vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     background: rgb(235, 235, 235);
     border-radius: 2vh;
     text-align: center;
@@ -262,7 +268,7 @@
     text-align: center;
     line-height: 4.1vh;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     transition: .08s;
     border-bottom: 2px solid #e8421800;
@@ -270,7 +276,7 @@
 
 .custom-background-button:hover {
     font-weight: bolder;
-    color: #14bedc;
+    color: rgb(39, 65, 65);
 }
 
 
@@ -311,7 +317,7 @@
     font-size: 1vh;
     color: white;
     font-size: 1.3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .profilepicture-option-description {
@@ -322,7 +328,7 @@
     font-size: 1vh;
     color: white;
     font-size: 1.1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .profilepicture-option-current {
@@ -332,7 +338,7 @@
     text-align: center;
     font-size: 1.6vh;
     color: green;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .profilepicture-buttons {
@@ -350,12 +356,12 @@
     text-align: center;
     line-height: 4.7vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
 }
 
 .profilepicture-button:hover {
-    border-top: .3vh solid #14addc;
+    border-top: .3vh solid rgb(39, 65, 65);
 }
 
 .profilepicture-custom {
@@ -374,7 +380,7 @@
 }
 
 .profilepicture-custom-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     padding: 2vh;
     font-size: 1.5vh;
     text-align: center;
@@ -387,7 +393,7 @@
     outline: none;
     height: 3.5vh;
     width: 21vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     border-radius: 2vh;
     text-align: center;
 }
@@ -411,7 +417,7 @@
     text-align: center;
     line-height: 4.1vh;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     transition: .08s;
     border-bottom: 2px solid #e8421800;
@@ -419,7 +425,7 @@
 
 .custom-profilepicture-button:hover {
     font-weight: bolder;
-    color: #DC143C;
+    color: rgb(39, 65, 65);
 }
 
 /* The switch - the box around the slider */
@@ -448,7 +454,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(35, 176, 231);
+    background-color: #dfdfdf;
+    border: 1px solid black;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -460,7 +467,7 @@
     width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
     transition: .4s;
 }

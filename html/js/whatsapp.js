@@ -53,7 +53,7 @@ $(document).on('click', '.whatsapp-chat', function(e){
     $('.whatsapp-openedchat-messages').animate({scrollTop: 9999}, 150);
 
     if (OpenedChatPicture == null) {
-        OpenedChatPicture = "./img/avatar.png";
+        OpenedChatPicture = "./img/default.png";
         if (ChatData.picture != null || ChatData.picture != undefined || ChatData.picture != "default") {
             OpenedChatPicture = ChatData.picture
         }
@@ -115,7 +115,7 @@ GetCurrentDateKey = function() {
 QB.Phone.Functions.LoadWhatsappChats = function(chats) {
     $(".whatsapp-chats").html("");
     $.each(chats, function(i, chat){
-        var profilepicture = "./img/avatar.png";
+        var profilepicture = "./img/default.png";
         if (chat.picture !== "default") {
             profilepicture = chat.picture
         }
@@ -264,7 +264,7 @@ QB.Phone.Functions.SetupChatMessages = function(cData, NewChatData) {
             $.post('https://ef-phone/GetProfilePicture', JSON.stringify({
                 number: OpenedChatData.number,
             }), function(picture){
-                OpenedChatPicture = "./img/avatar.png";
+                OpenedChatPicture = "./img/default.png";
                 if (picture != "default" && picture != null) {
                     OpenedChatPicture = picture
                 }
@@ -310,7 +310,7 @@ QB.Phone.Functions.SetupChatMessages = function(cData, NewChatData) {
             $.post('https://ef-phone/GetProfilePicture', JSON.stringify({
                 number: OpenedChatData.number,
             }), function(picture){
-                OpenedChatPicture = "./img/avatar.png";
+                OpenedChatPicture = "./img/default.png";
                 if (picture != "default" && picture != null) {
                     OpenedChatPicture = picture
                 }

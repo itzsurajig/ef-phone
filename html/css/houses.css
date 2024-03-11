@@ -23,7 +23,7 @@
     height: 100%;
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     transition: .075s linear;
 }
 
@@ -34,11 +34,11 @@
 }
 
 .houses-app-header-tab-selected {
-    border-bottom: .3vh solid #16a8c2;
+    border-bottom: .3vh solid #c23616;
 }
 
 .houses-app-header-tab-selected > p {
-    color: #20bed3;
+    color: #ffffff;
 }
 
 .house-app-myhouses-container {
@@ -81,12 +81,12 @@
     transition: all 0.05s linear 0s;
     margin-bottom: 10px;
     background: rgba(23, 23, 23, 90%);
-    border-radius: 4rem;
+    border-radius: 0.15rem;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
 }
 
 .myhouses-house:hover {
-    background-color: #14bedc;
+    background-color: rgb(39, 65, 65);
 }
 
 .myhouse-house-icon {
@@ -108,7 +108,7 @@
     left: 5.5vh;
     top: 1.7vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.2vh;
 }
 
@@ -117,7 +117,7 @@
     left: 5.5vh;
     bottom: 1.7vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
 }
 
@@ -156,7 +156,7 @@
     color: rgb(255 255 255);
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     border-bottom: .1vh solid rgba(0, 0, 0, 0.26);
 }
@@ -168,7 +168,7 @@
     width: 12vh;
     height: 5vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     border-radius: .3vh;
     top: 6vh;
@@ -226,8 +226,8 @@
     left: 35vw;
     /* left: 0; */
     right: 0;
-    background-color: rgb(0, 0, 0);
-    border-radius: 4vh;
+    background-color: rgb(36, 36, 36);
+    border-radius: .5vh;
     box-shadow:
     inset 0 0 1vh .2vh rgba(0, 0, 0, 0.281),
     0 0 1vh .2vh rgba(0, 0, 0, 0.253);
@@ -241,10 +241,10 @@
     margin: 0 auto;
     left: 35vw;
     right: 0;
-    background-color: rgb(0, 0, 0);
-    border-radius: 4vh;
+    background-color: rgb(36, 36, 36);
+    border-radius: .5vh;
     box-shadow:
-    inset 0 0 1vh .2vh rgba(37, 37, 37, 0.281),
+    inset 0 0 1vh .2vh rgba(0, 0, 0, 0.281),
     0 0 1vh .2vh rgba(0, 0, 0, 0.253);
     top: 15vh;
 }
@@ -256,7 +256,7 @@
     color: rgb(255 255 255);
     text-align: center;
     line-height: 5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     border-bottom: .1vh solid rgba(0, 0, 0, 0.26);
 }
@@ -271,7 +271,7 @@
     top: 7.5vh;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     text-indent: 1vh;
     color: black;
@@ -322,7 +322,7 @@
     text-overflow: ellipsis;
     position: absolute;
     padding: 1.2vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     color: white;
 }
@@ -386,22 +386,22 @@
     margin-bottom: 10px;
     transition: 0.1s ease;
     background: rgba(23, 23, 23, 90%);
-    border-radius: 3rem;
+    border-radius: 0.15rem;
     box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
 }
 
 .mykeys-key:hover {
-    background-color: #14bedc;
+    background-color: rgb(39, 65, 65);
 }
 
 .mykeys-key-label {
     position: absolute;
     top: 0;
-    left: 30;
+    left: 0;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5vh;
-    margin: 1.5vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.3vh;
+    margin: 1vh;
 }
 
 .mykeys-key-sub {
@@ -409,7 +409,7 @@
     bottom: 0;
     left: 0;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1vh;
-    margin: 1.4vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2vh;
+    margin: 1vh;
 }

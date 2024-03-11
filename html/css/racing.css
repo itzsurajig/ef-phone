@@ -22,7 +22,7 @@
     text-indent: 1.9vh;
     line-height: 14vh;
     color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     text-shadow: .1vh .1vh 0px #000000;
 }
@@ -65,7 +65,7 @@
     color: white;
     line-height: 4.6vh;
     font-size: 1.4vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-shadow: .05vh .05vh 0px #000000b2;
 }
 
@@ -117,7 +117,7 @@
     position: absolute;
     left: 1.5vh;
     top: 1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: black;
     font-size: 1.4vh;
 }
@@ -126,7 +126,7 @@
     position: absolute;
     left: 1.5vh;
     top: 3.3vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: black;
     font-size: 1.4vh;
 }
@@ -143,7 +143,7 @@
     position: relative;
     float: left;
     font-size: 1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     background-color: rgb(41, 41, 41);
     padding: .3vh;
@@ -238,7 +238,7 @@
     left: 2vh;
     top: 9.5vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .dropdown {
@@ -331,7 +331,7 @@
     left: 2vh;
     top: 20vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .racing-setup-laps {
@@ -344,7 +344,7 @@
     outline: none;
     background-color: transparent;
     border-bottom: .2vh solid #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
     transition: .1s linear;
 }
@@ -366,7 +366,7 @@
     left: 2vh;
     top: 30.5vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .racing-setup-information-distance {
@@ -379,7 +379,7 @@
     padding-left: 1vh;
     padding-right: 1vh;
     border-radius: 4vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -393,7 +393,7 @@
     padding-left: 1vh;
     padding-right: 1vh;
     border-radius: 4vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -407,7 +407,7 @@
     padding-left: 1vh;
     padding-right: 1vh;
     border-radius: 4vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     box-shadow: inset 0 0 .3vh 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -460,7 +460,7 @@
     left: 1.41vh;
     top: 1.2vh;
     color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .racing-create-trackname {
@@ -473,7 +473,7 @@
     outline: none;
     background-color: transparent;
     border-bottom: .2vh solid rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: rgb(0, 0, 0);
     transition: .1s linear;
 }
@@ -587,7 +587,7 @@
     right: 2.3vh;
     top: 10vh;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .racing-leaderboard-item {
@@ -611,7 +611,7 @@
     position: absolute;
     left: 1.5vh;
     top: 1vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: black;
     font-size: 1.4vh;
 }
@@ -620,7 +620,7 @@
     position: absolute;
     left: 1.5vh;
     top: 3.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: rgb(32, 32, 32);
     font-size: 1.2vh;
 }
@@ -651,7 +651,7 @@
 .racing-leaderboard-details-block-trackname {
     text-align: center;
     line-height: 6vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: black;
     width: 100%;
@@ -723,7 +723,7 @@
     left: 0;
     right: 0;
     top: 6.8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .racing-leaderboards-button {

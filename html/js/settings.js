@@ -70,7 +70,7 @@ QB.Phone.Functions.LoadMetaData = function(MetaData) {
     }
 
     if (MetaData.profilepicture == "default") {
-        $("[data-settingstab='profilepicture']").find('.settings-tab-icon').html('<img src="./img/avatar.png">');
+        $("[data-settingstab='profilepicture']").find('.settings-tab-icon').html('<img src="./img/default.png">');
     } else {
         $("[data-settingstab='profilepicture']").find('.settings-tab-icon').html('<img src="'+MetaData.profilepicture+'">');
     }
@@ -141,7 +141,7 @@ $(document).on('click', '#accept-profilepicture', function(e){
     if (ProfilePicture === "default") {
         QB.Phone.Notifications.Add("fas fa-paint-brush", "Settings", "Standard avatar set!")
         QB.Phone.Animations.TopSlideUp(".settings-"+QB.Phone.Settings.OpenedTab+"-tab", 200, -100);
-        $("[data-settingstab='profilepicture']").find('.settings-tab-icon').html('<img src="./img/avatar.png">');
+        $("[data-settingstab='profilepicture']").find('.settings-tab-icon').html('<img src="./img/default.png">');
     } else {
         QB.Phone.Notifications.Add("fas fa-paint-brush", "Settings", "Personal avatar set!")
         QB.Phone.Animations.TopSlideUp(".settings-"+QB.Phone.Settings.OpenedTab+"-tab", 200, -100);

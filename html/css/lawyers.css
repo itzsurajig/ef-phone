@@ -14,7 +14,7 @@
     height: 12vh;
     top: 0;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
 }
 
@@ -70,7 +70,7 @@
     left: 1vh;
     line-height: 3.5vh;
     border-radius: 50%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.8vh;
     color: white;
 }
@@ -80,7 +80,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 5.5vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5vh;
     max-width: 14vh;
     white-space: nowrap;
@@ -93,7 +93,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.3vh;
     margin: 0 auto;
     left: 0;

@@ -751,13 +751,3 @@ $(document).on('click', '.suggested-contact', function(e){
     $(".phone-add-contact-number").val(SuggestionData.number);
     $(".phone-add-contact-iban").val(SuggestionData.bank);
 });
-
-$(document).on('click', '#box-new-cancel', function(e){
-    e.preventDefault();
-    ClearInputNew()
-    $('.phone-new-box-body').fadeOut(350);
-});
-
-function ClearInputNew(){
-    $(".phone-new-input-class").val("");
-}

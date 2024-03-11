@@ -54,7 +54,7 @@ QB.Phone.Functions.DoBankOpen = function() {
 
     $(".bank-app-loaded").css({"display":"none", "padding-left":"30vh"});
     $(".bank-app-accounts").css({"left":"30vh"});
-    $(".qvisa").css({"left": "0vh"});
+    $(".qbank-logo").css({"left": "0vh"});
     $("#qbank-text").css({"opacity":"0.0", "left":"9vh"});
     $(".bank-app-loading").css({
         "display":"block",
@@ -62,7 +62,7 @@ QB.Phone.Functions.DoBankOpen = function() {
     });
     setTimeout(function(){
         CurrentTab = "accounts";
-        $(".qvisa").animate({
+        $(".qbank-logo").animate({
             left: -12+"vh"
         }, 500);
         setTimeout(function(){

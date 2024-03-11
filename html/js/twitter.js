@@ -94,7 +94,7 @@ QB.Phone.Notifications.LoadTweets = function(Tweets) {
             var TimeAgo = moment(Tweet.date).format('MM/DD/YYYY hh:mm');
 
             var TwitterHandle = Tweet.firstName + ' ' + Tweet.lastName
-            var PictureUrl = "./img/avatar.png"
+            var PictureUrl = "./img/default.png"
             if (Tweet.picture !== "default") {
                 PictureUrl = Tweet.picture
             }
@@ -152,7 +152,7 @@ QB.Phone.Notifications.LoadMentionedTweets = function(Tweets) {
             var TimeAgo = moment(Tweet.date).format('MM/DD/YYYY hh:mm');
 
             var TwitterHandle = Tweet.firstName + ' ' + Tweet.lastName
-            var PictureUrl = "./img/avatar.png";
+            var PictureUrl = "./img/default.png";
             if (Tweet.picture !== "default") {
                 PictureUrl = Tweet.picture
             }
@@ -322,7 +322,7 @@ QB.Phone.Notifications.LoadHashtagMessages = function(Tweets) {
             var TimeAgo = moment(Tweet.date).format('MM/DD/YYYY hh:mm');
 
             var TwitterHandle = Tweet.firstName + ' ' + Tweet.lastName
-            var PictureUrl = "./img/avatar.png"
+            var PictureUrl = "./img/default.png"
             if (Tweet.picture !== "default") {
                 PictureUrl = Tweet.picture
             }

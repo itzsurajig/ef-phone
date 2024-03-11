@@ -13,8 +13,6 @@ QB.Phone.ContactColors = {
     5: "#9c88ff",
 }
 
-efscreenlock = true
-
 QB.Phone.Data = {
     currentApplication: null,
     PlayerData: {},
@@ -46,6 +44,7 @@ function IsAppJobBlocked(joblist, myjob) {
     }
     return retval;
 }
+
 QB.Phone.Functions.SetupApplications = function(data) {
     QB.Phone.Data.Applications = data.applications;
 
@@ -60,88 +59,89 @@ QB.Phone.Functions.SetupApplications = function(data) {
         $(applicationSlot).removeData('app');
         $(applicationSlot).removeData('placement')
     }
+    
 
-    $.each(data.applications, function(i, app){
-        var applicationSlot = $(".phone-applications").find('[data-appslot="'+app.slot+'"]');
-        var blockedapp = IsAppJobBlocked(app.blockedjobs, QB.Phone.Data.PlayerJob.name)
+$.each(data.applications, function(i, app){
+    var applicationSlot = $(".phone-applications").find('[data-appslot="'+app.slot+'"]');
+    var blockedapp = IsAppJobBlocked(app.blockedjobs, QB.Phone.Data.PlayerJob.name)
 
-        if ((!app.job || app.job === QB.Phone.Data.PlayerJob.name) && !blockedapp) {
-            $(applicationSlot).css({"background-color":app.color});
-            var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';
-            if (app.app == "meos") {
-                icon = '<img src="./img/politie.png" class="ef-app-icon">';
-            }
-            if (app.app == "whatsapp") {
-                icon = '<img src="./img/apps/whatsapp.png" class="ef-app-icon">';
-            }
-            if (app.app == "phone") {
-                icon = '<img src="./img/apps/system_phone.png" class="ef-app-icon">';
-            }
-            if (app.app == "settings") {
-                icon = '<img src="./img/apps/system_settings.png" class="ef-app-icon">';
-            }
-            if (app.app == "twitter") {
-                icon = '<img src="./img/apps/twitter.png" class="ef-app-icon">';
-            }
-            if (app.app == "mail") {
-                icon = '<img src="./img/apps/system_email.png" class="ef-app-icon">';
-            }
-            if (app.app == "camera") {
-                icon = '<img src="./img/apps/system_camera.png" class="ef-app-icon">';
-            }
-            if (app.app == "gallery") {
-                icon = '<img src="./img/apps/system_gallery.png" class="ef-app-icon">';
-            }
-            if (app.app == "calculator") {
-                icon = '<img src="./img/apps/calculator.png" class="ef-app-icon">';
-            }
-            else if (app.app == "paytm"){
-            icon = '<img src="./img/apps/paytm.png" class="ef-paytmapp-icon">';
-            }
-            if (app.app == "advert") {
-                icon = '<img src="./img/apps/ads.png" class="ef-app-icon">';
-            }
-            if (app.app == "bank") {
-                icon = '<img src="./img/apps/paypal.png" class="ef-app-icon">';
-            }
-            if (app.app == "garage") {
-                icon = '<img src="./img/apps/carmudi.png" class="ef-app-icon">';
-            }
-            if (app.app == "bill"){
-            icon = '<img src="./img/apps/invoices.png" class="ef-app-icon">';
-            }
-            if (app.app == "lawyers") {
-                icon = '<img src="./img/apps/police-card.png" class="ef-app-icon">';
-            }
-            if (app.app == "racing") {
-                icon = '<img src="./img/apps/racing.png" class="ef-app-icon">';
-            }
-            if (app.app == "crypto") {
-                icon = '<img src="./img/apps/bitcoin.png" class="ef-app-icon">';
-            }
-            if (app.app == "ping") {
-                icon = '<img src="./img/apps/maps.png" class="ef-app-icon">';
-            }
-            if (app.app == "houses") {
-                icon = '<img src="./img/apps/home.png" class="ef-app-icon">';
-            }
-            if (app.app == "lsbn") {
-                icon = '<img src="./img/apps/lsbn.png" class="ef-app-icon">';
-            }
-            if (app.app == "meos") {
-                icon = '<img src="./img/apps/police1.png" class="ef-app-icon">';
-            }
-            $(applicationSlot).html(icon+'<div class="app-unread-alerts">0</div>');
-            $(applicationSlot).prop('title', app.tooltipText);
-            $(applicationSlot).data('app', app.app);
-
-            if (app.tooltipPos !== undefined) {
-                $(applicationSlot).data('placement', app.tooltipPos)
-            }
+    if ((!app.job || app.job === QB.Phone.Data.PlayerJob.name) && !blockedapp) {
+        $(applicationSlot).css({"background-color":app.color});
+        var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';
+        if (app.app == "meos") {
+            icon = '<img src="./img/politie.png" class="ef-app-icon">';
         }
-    });
+        if (app.app == "whatsapp") {
+            icon = '<img src="./img/apps/whatsapp.png" class="ef-app-icon">';
+        }
+        if (app.app == "phone") {
+            icon = '<img src="./img/apps/system_phone.png" class="ef-app-icon">';
+        }
+        if (app.app == "settings") {
+            icon = '<img src="./img/apps/system_settings.png" class="ef-app-icon">';
+        }
+        if (app.app == "twitter") {
+            icon = '<img src="./img/apps/twitter.png" class="ef-app-icon">';
+        }
+        if (app.app == "mail") {
+            icon = '<img src="./img/apps/system_email.png" class="ef-app-icon">';
+        }
+        if (app.app == "camera") {
+            icon = '<img src="./img/apps/system_camera.png" class="ef-app-icon">';
+        }
+        if (app.app == "gallery") {
+            icon = '<img src="./img/apps/system_gallery.png" class="ef-app-icon">';
+        }
+        if (app.app == "calculator") {
+            icon = '<img src="./img/apps/calculator.png" class="ef-app-icon">';
+        }
+        else if (app.app == "paytm"){
+        icon = '<img src="./img/apps/paytm.png" class="ef-paytmapp-icon">';
+        }
+        if (app.app == "advert") {
+            icon = '<img src="./img/apps/ads.png" class="ef-app-icon">';
+        }
+        if (app.app == "bank") {
+            icon = '<img src="./img/apps/paypal.png" class="ef-app-icon">';
+        }
+        if (app.app == "garage") {
+            icon = '<img src="./img/apps/carmudi.png" class="ef-app-icon">';
+        }
+        if (app.app == "bill"){
+        icon = '<img src="./img/apps/invoices.png" class="ef-app-icon">';
+        }
+        if (app.app == "lawyers") {
+            icon = '<img src="./img/apps/police-card.png" class="ef-app-icon">';
+        }
+        if (app.app == "racing") {
+            icon = '<img src="./img/apps/racing.png" class="ef-app-icon">';
+        }
+        if (app.app == "crypto") {
+            icon = '<img src="./img/apps/bitcoin.png" class="ef-app-icon">';
+        }
+        if (app.app == "ping") {
+            icon = '<img src="./img/apps/maps.png" class="ef-app-icon">';
+        }
+        if (app.app == "houses") {
+            icon = '<img src="./img/apps/home.png" class="ef-app-icon">';
+        }
+        if (app.app == "lsbn") {
+            icon = '<img src="./img/apps/lsbn.png" class="ef-app-icon">';
+        }
+        if (app.app == "meos") {
+            icon = '<img src="./img/apps/police1.png" class="ef-app-icon">';
+        }
+        $(applicationSlot).html(icon+'<div class="app-unread-alerts">0</div>');
+        $(applicationSlot).prop('title', app.tooltipText);
+        $(applicationSlot).data('app', app.app);
 
-    $('[data-toggle="tooltip"]').tooltip();
+        if (app.tooltipPos !== undefined) {
+            $(applicationSlot).data('placement', app.tooltipPos)
+        }
+    }
+});
+
+$('[data-toggle="tooltip"]').tooltip();
 }
 
 // QB.Phone.Functions.SetupApplications = function(data) {
@@ -283,7 +283,7 @@ $(document).on('click', '.phone-application', function(e){
 
                     $.post('https://ef-phone/GetCryptoTransactions', JSON.stringify({}), function(data){
                         RefreshCryptoTransactions(data);
-                    });
+                    })
                 } else if (PressedApplication == "racing") {
                     $.post('https://ef-phone/GetAvailableRaces', JSON.stringify({}), function(Races){
                         SetupRaces(Races);
@@ -317,10 +317,6 @@ $(document).on('click', '.phone-application', function(e){
                         SetupTruckerInfo(data);
                     });
                 }
-                else if (PressedApplication == "jobcenter") {
-                    LoadJobCenter();
-                }
-
                 else if (PressedApplication == "gallery") {
                     $.post('https://ef-phone/GetGalleryData', JSON.stringify({}), function(data){
                         setUpGalleryData(data);
@@ -331,12 +327,6 @@ $(document).on('click', '.phone-application', function(e){
                         setUpCameraApp(url)
                     })
                     QB.Phone.Functions.Close();
-                }
-                else if (PressedApplication == "bill") {
-                    LoadbillJob();
-                }
-                else if (PressedApplication == "lsbn") {
-                    LoadLSBNEvent();
                 }
 
                 
@@ -445,7 +435,7 @@ QB.Phone.Functions.Close = function() {
                         left: 0+"vh"
                     }, 1);
                     $(".whatsapp-openedchat").animate({
-                        left: 0+"vh"
+                        left: -30+"vh"
                     }, 1, function(){
                         $(".whatsapp-openedchat").css({"display":"none"});
                     });
@@ -464,6 +454,7 @@ QB.Phone.Functions.Close = function() {
     $('.publicphonebase').css('display', 'none')
     $('.lock-screen').css('display', 'block')
     $('.phone-footer').css('display', 'none')   
+
     QB.Phone.Animations.BottomSlideDown('.container', 300, -70);
     $.post('https://ef-phone/Close');
     QB.Phone.Data.IsOpen = false;
@@ -576,7 +567,6 @@ QB.Phone.Functions.LoadPhoneData = function(data) {
     $("#player-id").html("<span>" + "ID: " + data.PlayerId + "</span>")
 }
 
-
 QB.Phone.Functions.UpdateTime = function(data) {
     var NewDate = new Date();
     var NewHour = NewDate.getHours();
@@ -593,6 +583,7 @@ QB.Phone.Functions.UpdateTime = function(data) {
 
     $("#phone-time").html("<span>" + data.InGameTime.hour + ":" + data.InGameTime.minute + "</span>");
     $("#ef-phone-time").html("<span>" + data.InGameTime.hour + ":" + data.InGameTime.minute + "</span>");
+    $("#ef-phone-time2").html("<span>" + data.InGameTime.hour + ":" + data.InGameTime.minute + "</span>");
 }
 
 var NotificationTimeout = null;
@@ -800,6 +791,7 @@ $(document).ready(function(){
         }
     })
 });
+
 
 $(document).on("click", ".triggerHelp", function(){
     $.ajax({
