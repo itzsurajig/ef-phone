@@ -15,10 +15,6 @@ Players can also access a range of services apps, including a mail app, and many
 
 
 
-![EF-PHONE PIC](https://user-images.githubusercontent.com/104319683/233084085-719fbca7-e51c-4bed-b47a-23b117605c02.png)
-
-
-
 <h1>Free Download</h1>
 
 # [Tebex](https://ef-development.tebex.io/package/5639623)
@@ -48,3 +44,7 @@ Join [Discord](https://discord.gg/ef-development-tm-936207653145833503) For More
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>
+
+
+# this is old version
+![EF-PHONE PIC](https://user-images.githubusercontent.com/104319683/233084085-719fbca7-e51c-4bed-b47a-23b117605c02.png)
