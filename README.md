@@ -30,6 +30,16 @@ Players can also access a range of services apps, including a mail app, and many
 
 Join [Discord](https://discord.gg/ef-development-tm-936207653145833503) For More Free Scripts <br>
 
+# FAQs
+<li>What should be the folder name ?</li>
+  ↳ ef-phone.
+<li>What if i get no app in Home Screen ? </li>
+  ↳ Delete the old sql and install the new one.
+<li>Which Garage scripts are works well ?</li>
+  ↳ The default qb-garage is works well if you using some other script you have to add there export on that.
+<li>How to setup phone Camera ?</li>
+  ↳ Add Discord webhook in Config.lua line no. 6  <h3> Config.Webhook = '' </h3>
+
 # [Documentation](https://efdevelopment.gitbook.io/ef-phone) 👈
 
 
