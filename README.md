@@ -28,7 +28,7 @@ Players can also access a range of services apps, including a mail app, and many
 
 <br>
 
-Join [Discord](https://discord.gg/ef-development-tm-936207653145833503) For More Free Scripts <br>
+Join [Discord](https://discord.gg/qzsRX7sMjU) For More Free Scripts <br>
 
 # FAQs
 <li>What should be the folder name ?</li>
