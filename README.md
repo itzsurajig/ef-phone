@@ -24,7 +24,7 @@ Players can also access a range of services apps, including a mail app, and many
 
 <h1>Free Download</h1>
 
-# [Tebex](https://ef-development.tebex.io/package/5639623)
+# [Tebex](https://5mphone.com/)
 
 <br>
 
