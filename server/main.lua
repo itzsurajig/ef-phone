@@ -127,7 +127,15 @@ local function GenerateOwnerName()
 end
 
 
+local function EscapeHtml(str)
+    if type(str) ~= 'string' then return str end
+    return str:gsub('&', '&amp;'):gsub('<', '&lt;'):gsub('>', '&gt;'):gsub('"', '&quot;'):gsub("'", '&#39;')
+end
+
 local function sendNewMailToOffline(citizenid, mailData)
+    mailData.sender = EscapeHtml(mailData.sender)
+    mailData.subject = EscapeHtml(mailData.subject)
+    mailData.message = EscapeHtml(mailData.message)
     local Player = QBCore.Functions.GetPlayerByCitizenId(citizenid)
     if Player then
         local src = Player.PlayerData.source
