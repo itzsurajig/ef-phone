@@ -1,6 +1,6 @@
 <h1>EF-Phone</h1>
 
-# New Version
+# Check out New Version -> https://5mphone.com/
 
 <h1>
  
